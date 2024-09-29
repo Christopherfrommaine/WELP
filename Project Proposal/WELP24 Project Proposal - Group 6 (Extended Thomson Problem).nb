@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     14512,        387]
-NotebookOptionsPosition[     10171,        309]
-NotebookOutlinePosition[     10613,        326]
-CellTagsIndexPosition[     10570,        323]
+NotebookDataLength[     15390,        410]
+NotebookOptionsPosition[     10864,        329]
+NotebookOutlinePosition[     11270,        345]
+CellTagsIndexPosition[     11227,        342]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -269,15 +269,35 @@ cdd57a326552"],
 
 Cell["Who is responsible for what?", "Item",
  CellChangeTimes->{{3.93264082576614*^9, 3.932640858440374*^9}, {
-  3.932640893654585*^9, 
-  3.932640924125202*^9}},ExpressionUUID->"3d567ec8-b520-45b0-a847-\
-0069d05f1c5d"]
+  3.932640893654585*^9, 3.932640924125202*^9}, {3.936615965955353*^9, 
+  3.936615965957409*^9}},ExpressionUUID->"3d567ec8-b520-45b0-a847-\
+0069d05f1c5d"],
+
+Cell["\<\
+Should dedicate a sprint to just figuring out all the physics stuff and doing \
+it numerically before actually solving anything\
+\>", "Item",
+ CellChangeTimes->{{3.93264082576614*^9, 3.932640858440374*^9}, {
+  3.932640893654585*^9, 3.932640924125202*^9}, {3.936615966183737*^9, 
+  3.9366159843037167`*^9}},ExpressionUUID->"410b0ccf-48c4-e043-b90c-\
+14e72b655bf9"]
 }, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell["Sprint 2", "Subsubsection",
  CellChangeTimes->{{3.932640777015089*^9, 
   3.932640789060409*^9}},ExpressionUUID->"3cfba3fa-766d-4f11-98b0-\
 6bd03209640c"],
+
+Cell["\<\
+Have one where we explore various distance functions after the framework is \
+built?\
+\>", "Item",
+ CellChangeTimes->{{3.936615999378128*^9, 
+  3.936616010727108*^9}},ExpressionUUID->"d151e587-6ab8-8046-a01d-\
+4006bfd2d2f1"]
+}, Open  ]],
 
 Cell["Sprint 3", "Subsubsection",
  CellChangeTimes->{{3.932640777015089*^9, 
@@ -307,9 +327,8 @@ Cell["", "Subsection",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1141.2, 568.8},
-WindowMargins->{{
-  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+WindowSize->{1920, 777.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
 FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 16, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"e54cbdfc-28d3-410a-b2ed-ea77dd21773b"
@@ -328,7 +347,7 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[583, 22, 287, 4, 98, "Title",ExpressionUUID->"89200b18-f8af-450f-a844-026dbdea0c05"],
 Cell[873, 28, 288, 6, 35, "Text",ExpressionUUID->"7f08a4a5-6eab-4599-917e-aebc910bff6d"],
-Cell[1164, 36, 649, 15, 71, "Subsubsection",ExpressionUUID->"340e4c11-fddc-4442-a0c7-9a2b79ace5e7"],
+Cell[1164, 36, 649, 15, 45, "Subsubsection",ExpressionUUID->"340e4c11-fddc-4442-a0c7-9a2b79ace5e7"],
 Cell[CellGroupData[{
 Cell[1838, 55, 250, 3, 53, "Section",ExpressionUUID->"3f0fd436-46c6-418a-bd0c-4fd18beb1c9f"],
 Cell[2091, 60, 204, 4, 32, "Item",ExpressionUUID->"7a05d5dd-fd01-4cdc-a978-dea6221a509c"],
@@ -340,7 +359,7 @@ Cell[CellGroupData[{
 Cell[3028, 88, 280, 6, 67, "Section",ExpressionUUID->"9ff44e61-1234-4369-a96f-685b19cb4dce"],
 Cell[CellGroupData[{
 Cell[3333, 98, 161, 3, 54, "Subsection",ExpressionUUID->"2d633ecd-11f7-4667-af10-affc244dd073"],
-Cell[3497, 103, 529, 10, 104, "Text",ExpressionUUID->"df65295b-df1a-994d-a36e-ab7bbf53d18c"]
+Cell[3497, 103, 529, 10, 58, "Text",ExpressionUUID->"df65295b-df1a-994d-a36e-ab7bbf53d18c"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[4063, 118, 172, 3, 54, "Subsection",ExpressionUUID->"dbc99c96-ffab-4bf6-bf49-fd885fd8f33f"],
@@ -348,7 +367,7 @@ Cell[4238, 123, 316, 7, 35, "Text",ExpressionUUID->"3af5204d-eb3f-6248-b87b-3adb
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[4591, 135, 189, 3, 54, "Subsection",ExpressionUUID->"11587d63-f329-4a0d-8997-4712cabf95c2"],
-Cell[4783, 140, 448, 9, 58, "Text",ExpressionUUID->"47f63f66-a64d-6a46-986f-d603e58fcf34"]
+Cell[4783, 140, 448, 9, 35, "Text",ExpressionUUID->"47f63f66-a64d-6a46-986f-d603e58fcf34"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[5268, 154, 169, 3, 54, "Subsection",ExpressionUUID->"e45b968e-6137-430f-a692-80a960439f1c"],
@@ -378,15 +397,19 @@ Cell[8157, 246, 159, 3, 45, "Subsubsection",ExpressionUUID->"086fcb2c-1fac-4fbd-
 Cell[8319, 251, 199, 4, 32, "Item",ExpressionUUID->"e7075b6a-6dbf-4a6a-8f4e-22c87c11c130"],
 Cell[8521, 257, 148, 3, 32, "Item",ExpressionUUID->"06edd733-bb81-4c82-84ef-83263877d054"],
 Cell[8672, 262, 261, 5, 32, "Item",ExpressionUUID->"840a8c97-5e4c-4d8c-aa69-cdd57a326552"],
-Cell[8936, 269, 218, 4, 32, "Item",ExpressionUUID->"3d567ec8-b520-45b0-a847-0069d05f1c5d"]
+Cell[8936, 269, 264, 4, 32, "Item",ExpressionUUID->"3d567ec8-b520-45b0-a847-0069d05f1c5d"],
+Cell[9203, 275, 373, 7, 32, "Item",ExpressionUUID->"410b0ccf-48c4-e043-b90c-14e72b655bf9"]
 }, Open  ]],
-Cell[9169, 276, 159, 3, 45, "Subsubsection",ExpressionUUID->"3cfba3fa-766d-4f11-98b0-6bd03209640c"],
-Cell[9331, 281, 161, 3, 37, "Subsubsection",ExpressionUUID->"db8c80f1-b5df-4281-b017-b2641b307708"],
-Cell[9495, 286, 159, 3, 37, "Subsubsection",ExpressionUUID->"a3a4a1a2-97a3-4325-bdd8-d5d0607e8c97"],
-Cell[9657, 291, 159, 3, 37, "Subsubsection",ExpressionUUID->"1d31dc94-4f7d-4d12-a614-7249739a119b"],
-Cell[9819, 296, 161, 3, 37, "Subsubsection",ExpressionUUID->"a811f8dc-ea86-43a1-8cf8-a752f50023c4"]
+Cell[CellGroupData[{
+Cell[9613, 287, 159, 3, 45, "Subsubsection",ExpressionUUID->"3cfba3fa-766d-4f11-98b0-6bd03209640c"],
+Cell[9775, 292, 234, 6, 32, "Item",ExpressionUUID->"d151e587-6ab8-8046-a01d-4006bfd2d2f1"]
 }, Open  ]],
-Cell[9995, 302, 148, 3, 54, "Subsection",ExpressionUUID->"f822194b-66f2-42a1-a446-9e39ec36aed1"]
+Cell[10024, 301, 161, 3, 45, "Subsubsection",ExpressionUUID->"db8c80f1-b5df-4281-b017-b2641b307708"],
+Cell[10188, 306, 159, 3, 37, "Subsubsection",ExpressionUUID->"a3a4a1a2-97a3-4325-bdd8-d5d0607e8c97"],
+Cell[10350, 311, 159, 3, 37, "Subsubsection",ExpressionUUID->"1d31dc94-4f7d-4d12-a614-7249739a119b"],
+Cell[10512, 316, 161, 3, 37, "Subsubsection",ExpressionUUID->"a811f8dc-ea86-43a1-8cf8-a752f50023c4"]
+}, Open  ]],
+Cell[10688, 322, 148, 3, 54, "Subsection",ExpressionUUID->"f822194b-66f2-42a1-a446-9e39ec36aed1"]
 }, Open  ]]
 }, Open  ]]
 }

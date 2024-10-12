@@ -1,0 +1,141 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      4365,        133]
+NotebookOptionsPosition[      3788,        115]
+NotebookOutlinePosition[      4189,        131]
+CellTagsIndexPosition[      4146,        128]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ComplexSpline", "[", 
+    RowBox[{"points_", ",", 
+     RowBox[{"order_", ":", "All"}]}], "]"}], "[", "z_", "]"}], ":=", 
+  RowBox[{"With", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"p", "=", 
+      RowBox[{
+       RowBox[{"Normal", "[", 
+        RowBox[{"Association", "[", 
+         RowBox[{"points", "/.", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"x_", ",", "y_"}], "}"}], "->", 
+            RowBox[{"(", 
+             RowBox[{"x", "->", "y"}], ")"}]}], ")"}]}], "]"}], "]"}], "/.", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"x_", "->", "y_"}], ")"}], "->", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "y"}], "}"}]}], ")"}]}]}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Interpolation", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Re", "[", "#1", "]"}], ",", 
+            RowBox[{"Im", "[", "#1", "]"}], ",", 
+            RowBox[{"Re", "[", "#1", "]"}]}], "}"}], "&"}], "@@@", "p"}], ",", 
+        RowBox[{"InterpolationOrder", "->", "order"}]}], "]"}], "[", 
+      RowBox[{
+       RowBox[{"Re", "[", "z", "]"}], ",", 
+       RowBox[{"Im", "[", "z", "]"}]}], "]"}], "+", 
+     RowBox[{"I", " ", 
+      RowBox[{
+       RowBox[{"Interpolation", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Re", "[", "#1", "]"}], ",", 
+             RowBox[{"Im", "[", "#1", "]"}], ",", 
+             RowBox[{"Im", "[", "#1", "]"}]}], "}"}], "&"}], "@@@", "p"}], 
+         ",", 
+         RowBox[{"InterpolationOrder", "->", "order"}]}], "]"}], "[", 
+       RowBox[{
+        RowBox[{"Re", "[", "z", "]"}], ",", 
+        RowBox[{"Im", "[", "z", "]"}]}], "]"}]}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.9374144221968136`*^9, 3.9374144823627205`*^9}, {
+  3.937414538301548*^9, 3.9374147657085094`*^9}, {3.9374148018993206`*^9, 
+  3.9374148025503254`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"d044c884-4b73-8b45-ac95-60da9dcaa2af"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ComplexSpline", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1", " ", "-", 
+        RowBox[{"2", "I"}]}], ",", "0"}], "}"}], ",", " ", 
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"3", "+", 
+        RowBox[{"5", "I"}]}], ",", "I"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", " ", "4"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"4", ",", "5"}], "}"}]}], "}"}], "]"}], "[", 
+  RowBox[{"1", "+", "I"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9374145910002155`*^9, 3.9374146047271957`*^9}, {
+  3.9374147700875416`*^9, 3.937414876888876*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"1d186a5d-42dd-334c-97e4-5c09a8b3d4a4"],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "\[ImaginaryI]"}]], "Output",
+ CellChangeTimes->{{3.937414605634178*^9, 3.9374146362911167`*^9}, {
+  3.937414772272545*^9, 3.9374148771068745`*^9}},
+ CellLabel->"Out[12]=",ExpressionUUID->"655b687a-68c7-fb42-818e-b52fb20c53ac"]
+}, Open  ]]
+},
+WindowSize->{1141.2, 573.6},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"673162c3-1b85-3c42-8217-94e46cf00bac"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 2198, 62, 85, "Input",ExpressionUUID->"d044c884-4b73-8b45-ac95-60da9dcaa2af"],
+Cell[CellGroupData[{
+Cell[2777, 86, 732, 20, 28, "Input",ExpressionUUID->"1d186a5d-42dd-334c-97e4-5c09a8b3d4a4"],
+Cell[3512, 108, 260, 4, 51, "Output",ExpressionUUID->"655b687a-68c7-fb42-818e-b52fb20c53ac"]
+}, Open  ]]
+}
+]
+*)
+

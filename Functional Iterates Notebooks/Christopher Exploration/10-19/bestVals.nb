@@ -1,0 +1,1240 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     63965,       1232]
+NotebookOptionsPosition[     63436,       1214]
+NotebookOutlinePosition[     63872,       1231]
+CellTagsIndexPosition[     63829,       1228]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{" ", 
+  RowBox[{"als", "=", 
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = True}, 
+     TemplateBox[{"List", "ListIcon", 
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Head: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            TagBox["List", "IconizedItem"]}]}, {
+          RowBox[{
+            TagBox["\"Length: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            TagBox["1257", "IconizedItem"]}]}, {
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            TagBox["10344", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+       Dynamic[Typeset`open]},
+      "IconizedObject"]],
+    CompressedData["
+1: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
+t65zC+aLxeGZv+q2ZU8wMfuJkKSkF/4PzU5oug==
+    "],
+    SelectWithContents->True,
+    Selectable->False]}]}]], "Input",
+ CellChangeTimes->{{3.93854839293528*^9, 3.938548394883711*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"16ccbae5-4ff1-694d-9103-c3b8299eb013"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "6.565233189557008`*^-9", ",", "0.009999977499649558`", ",", 
+   "0.019999448406652656`", ",", "0.029997919144605582`", ",", 
+   "0.039994889378450894`", ",", "0.049989858504183575`", ",", 
+   "0.05998232557292558`", ",", "0.06997178921448843`", ",", 
+   "0.07995774756029841`", ",", "0.0899396981655813`", ",", 
+   "0.09991713793066946`", ",", "0.10988956302132281`", ",", 
+   "0.11985646878792708`", ",", "0.1298173496834533`", ",", 
+   "0.13977169918002694`", ",", "0.14971900968398125`", ",", 
+   "0.1596587724492394`", ",", "0.16959047748888903`", ",", 
+   "0.17951361348477377`", ",", "0.18942766769495045`", ",", 
+   "0.19933212585882945`", ",", "0.2092264720998286`", ",", 
+   "0.21911018882533204`", ",", "0.22898275662376508`", ",", 
+   "0.2388436541585594`", ",", "0.24869235805879542`", ",", 
+   "0.2585283428062617`", ",", "0.26835108061868734`", ",", 
+   "0.27816004132886785`", ",", "0.2879546922593857`", ",", 
+   "0.2977344980926254`", ",", "0.3074989207357267`", ",", 
+   "0.31724741918012817`", ",", "0.32697944935529943`", ",", 
+   "0.33669467850495`", ",", "0.3463926920687986`", ",", 
+   "0.35607265644348085`", ",", "0.365734018794982`", ",", 
+   "0.3753762226617192`", ",", "0.384998707778036`", ",", 
+   "0.39460090988930696`", ",", "0.4041822605580037`", ",", 
+   "0.4137421869600445`", ",", "0.4232801116706489`", ",", 
+   "0.4327954524388839`", ",", "0.44228762194997673`", ",", 
+   "0.45175602757440214`", ",", "0.46120007110262506`", ",", 
+   "0.47061914846427855`", ",", "0.480012649430415`", ",", 
+   "0.48937963965231107`", ",", "0.498719047941819`", ",", 
+   "0.5080312494144733`", ",", "0.5173149696333641`", ",", 
+   "0.5265708411299932`", ",", "0.5357988240678822`", ",", 
+   "0.5449968767868371`", ",", "0.5541643581893506`", ",", 
+   "0.5633005594972933`", ",", "0.5724047916820261`", ",", 
+   "0.581476374945297`", ",", "0.5905146083781082`", ",", 
+   "0.5995187645312424`", ",", "0.6084879937350692`", ",", 
+   "0.6174209646624162`", ",", "0.6263166017897657`", ",", 
+   "0.6351780240748499`", ",", "0.6440036873272542`", ",", 
+   "0.6527916957719054`", ",", "0.6615399444854171`", ",", 
+   "0.670247011855176`", ",", "0.6789123330480462`", ",", 
+   "0.6875359083626961`", ",", "0.6961210474777361`", ",", 
+   "0.7046648920781039`", ",", "0.713162240136299`", ",", 
+   "0.7216131484758862`", ",", "0.7300177294028308`", ",", 
+   "0.7383758797920988`", ",", "0.7466880441254524`", ",", 
+   "0.7549616796513384`", ",", "0.7631864202134079`", ",", 
+   "0.7713574154137246`", ",", "0.7794724811723237`", ",", 
+   "0.7875312608056643`", ",", "0.7955416707364013`", ",", 
+   "0.8035004810695981`", ",", "0.8114034696505633`", ",", 
+   "0.8192506788670455`", ",", "0.8270418199205762`", ",", 
+   "0.8347804373557718`", ",", "0.8424601016771389`", ",", 
+   "0.8500778381351216`", ",", "0.8576319841038722`", ",", 
+   "0.865132824274688`", ",", "0.872572649330437`", ",", 
+   "0.8799371889868498`", ",", "0.8872223073304825`", ",", 
+   "0.8944572000984482`", ",", "0.9016235641665944`", ",", 
+   "0.9087156123549139`", ",", "0.9157395083169209`", ",", 
+   "0.9226925596409071`", ",", "0.9295617225926331`", ",", 
+   "0.9363488743855385`", ",", "0.9430765986464671`", ",", 
+   "0.9497194340167017`", ",", "0.956279632756287`", ",", 
+   "0.9627777488172634`", ",", "0.9691804742016529`", ",", 
+   "0.9754954455882306`", ",", "0.9817357289828786`", ",", 
+   "0.987874806169726`", ",", "0.993937916852528`", ",", 
+   "0.9998978030081629`", ",", "1.005751442736719`", ",", 
+   "1.0115310539710334`", ",", "1.0171964805686555`", ",", 
+   "1.0227935887967172`", ",", "1.0282701382077812`", ",", 
+   "1.0336487601934627`", ",", "1.0389148015395544`", ",", 
+   "1.0440787562755882`", ",", "1.0491328531345552`", ",", 
+   "1.054080532976638`", ",", "1.0589057324306923`", ",", 
+   "1.063612873982565`", ",", "1.068192724978451`", ",", 
+   "1.0726660266716013`", ",", "1.0769948723766503`", ",", 
+   "1.0812338898489242`", ",", "1.085322913779628`", ",", 
+   "1.0892884790178392`", ",", "1.0931180143757524`", ",", 
+   "1.0967947099693438`", ",", "1.1003707260182578`", ",", 
+   "1.1037911795780713`", ",", "1.1070590081662304`", ",", 
+   "1.1102129312621263`", ",", "1.113207681183721`", ",", 
+   "1.1160429584585174`", ",", "1.1187415240552938`", ",", 
+   "1.121287470416021`", ",", "1.1236712014460073`", ",", 
+   "1.1258924787741367`", ",", "1.1279717493438268`", ",", 
+   "1.1299019492678606`", ",", "1.1316661119301152`", ",", 
+   "1.1332640609157942`", ",", "1.134695636431331`", ",", 
+   "1.1359606953203667`", ",", "1.1370628861303251`", ",", 
+   "1.13800893849452`", ",", "1.138785567774248`", ",", "1.1393926963072283`",
+    ",", "1.1398302633811135`", ",", "1.1400982252395608`", ",", 
+   "1.1401965550866078`", ",", "1.1401252430893518`", ",", 
+   "1.1398842963789328`", ",", "1.1394737390498213`", ",", 
+   "1.138893612157408`", ",", "1.1381439737138985`", ",", 
+   "1.137224898682513`", ",", "1.136146794690136`", ",", 
+   "1.1349082682407168`", ",", "1.133503203901793`", ",", 
+   "1.1319317421786272`", ",", "1.1301940402160824`", ",", 
+   "1.128290271782907`", ",", "1.1262312393395106`", ",", 
+   "1.124035856184764`", ",", "1.1216779828629901`", ",", 
+   "1.1191578551595562`", ",", "1.1164797790675727`", ",", 
+   "1.1136699268478463`", ",", "1.110700555757141`", ",", 
+   "1.1075719627300908`", ",", "1.1043215279250005`", ",", 
+   "1.10092592977657`", ",", "1.0973744140172037`", ",", 
+   "1.0937138269282627`", ",", "1.0899086084067322`", ",", 
+   "1.085960279550102`", ",", "1.08189518253094`", ",", "1.0776800258414905`",
+    ",", "1.0733649084034376`", ",", "1.0689149913421714`", ",", 
+   "1.064349249347199`", ",", "1.059665058796521`", ",", 
+   "1.0548554301891557`", ",", "1.0499303343190467`", ",", 
+   "1.0448883566607394`", ",", "1.0397465401763653`", ",", 
+   "1.0344927926448957`", ",", "1.0291358891835738`", ",", 
+   "1.0236726371547058`", ",", "1.018096869798733`", ",", 
+   "1.0124414339935597`", ",", "1.0066717982494555`", ",", 
+   "1.0008387214769257`", ",", "0.9948918355606997`", ",", 
+   "0.9888489393375326`", ",", "0.9827201709266672`", ",", 
+   "0.9764898753293338`", ",", "0.9701944305982265`", ",", 
+   "0.9638023783584635`", ",", "0.9573182850072536`", ",", 
+   "0.9507721714407362`", ",", "0.9441380290173617`", ",", 
+   "0.9374246450403677`", ",", "0.9306503289108854`", ",", 
+   "0.9237907569421597`", ",", "0.9168481754886548`", ",", 
+   "0.9098416752112142`", ",", "0.9027579392583521`", ",", 
+   "0.8955996020720036`", ",", "0.8883817139916157`", ",", 
+   "0.881103963105953`", ",", "0.8737499424016919`", ",", 
+   "0.8663180507608442`", ",", "0.8588334067508071`", ",", 
+   "0.851286732291686`", ",", "0.8436763411754623`", ",", 
+   "0.8360040047286965`", ",", "0.8282807699847856`", ",", 
+   "0.820497697837663`", ",", "0.8126568642487091`", ",", 
+   "0.8047607631526676`", ",", "0.7968091019264577`", ",", 
+   "0.7888130791600064`", ",", "0.7807612740958177`", ",", 
+   "0.7726535500190304`", ",", "0.7644900512242951`", ",", 
+   "0.7562716916911292`", ",", "0.7480107978360145`", ",", 
+   "0.7397052738743799`", ",", "0.7313530283818434`", ",", 
+   "0.7229545008808714`", ",", "0.7145098337681522`", ",", 
+   "0.7060189783138611`", ",", "0.6974843258757067`", ",", 
+   "0.6889083093375353`", ",", "0.6802902361411597`", ",", 
+   "0.6716305384925285`", ",", "0.6629292377028853`", ",", 
+   "0.654186682042467`", ",", "0.6454040188844312`", ",", 
+   "0.6365833544253562`", ",", "0.6277308040367835`", ",", 
+   "0.6188422054260343`", ",", "0.6099147684471149`", ",", 
+   "0.6009505927486877`", ",", "0.5919513302837036`", ",", 
+   "0.5829179211309524`", ",", "0.5738510927005211`", ",", 
+   "0.5647515505044796`", ",", "0.5556199711912602`", ",", 
+   "0.5464570332877622`", ",", "0.5372648731445476`", ",", 
+   "0.5280436500798795`", ",", "0.518792774850671`", ",", 
+   "0.5095131768695124`", ",", "0.5002051227198014`", ",", 
+   "0.49086965616637374`", ",", "0.4815067808637434`", ",", 
+   "0.4721171377236746`", ",", "0.46270184513590024`", ",", 
+   "0.45326151287782407`", ",", "0.44379674459801116`", ",", 
+   "0.4343081381116493`", ",", "0.424796285679311`", ",", 
+   "0.415261774270328`", ",", "0.40570518581200815`", ",", 
+   "0.3961270974257626`", ",", "0.38652808165114944`", ",", 
+   "0.37690889770117825`", ",", "0.36727043241591195`", ",", 
+   "0.3576126509428038`", ",", "0.3479361148374551`", ",", 
+   "0.33824138177408186`", ",", "0.3285290057269142`", ",", 
+   "0.3187995371433811`", ",", "0.3090535231096585`", ",", 
+   "0.29929150750910616`", ",", "0.289514031174078`", ",", 
+   "0.27972163203156475`", ",", "0.2699148452430731`", ",", 
+   "0.2600942033391409`", ",", "0.2502602363488351`", ",", 
+   "0.24041347192457804`", ",", "0.23055443546260268`", ",", 
+   "0.22068365021933942`", ",", "0.21080163742399466`", ",", 
+   "0.20090891638758976`", ",", "0.19100600460868672`", ",", 
+   "0.1810934178760406`", ",", "0.17117167036837774`", ",", 
+   "0.16124127475151478`", ",", "0.1513027422729959`", ",", 
+   "0.14135658285444247`", ",", "0.1314033051817736`", ",", 
+   "0.1214434167934757`", ",", "0.11147742416706305`", ",", 
+   "0.10150583280389448`", ",", "0.09152914731247515`", ",", 
+   "0.08154787149039679`", ",", "0.07156250840503581`", ",", 
+   "0.06157356047315287`", ",", "0.0515815295395058`", ",", 
+   "0.04158691695460922`", ",", "0.03159022365175569`", ",", 
+   "0.021591950223410747`", ",", "0.011592596997107608`", ",", 
+   "0.0015926641109519747`", ",", 
+   RowBox[{"-", "0.008407348407916522`"}], ",", 
+   RowBox[{"-", "0.01840694055020849`"}], ",", 
+   RowBox[{"-", "0.02840561222810633`"}], ",", 
+   RowBox[{"-", "0.038402863193009285`"}], ",", 
+   RowBox[{"-", "0.04839819295993775`"}], ",", 
+   RowBox[{"-", "0.05839110073180884`"}], ",", 
+   RowBox[{"-", "0.06838108532324196`"}], ",", 
+   RowBox[{"-", "0.07836764508379446`"}], ",", 
+   RowBox[{"-", "0.08835027782049741`"}], ",", 
+   RowBox[{"-", "0.0983284807195874`"}], ",", 
+   RowBox[{"-", "0.10830175026729896`"}], ",", 
+   RowBox[{"-", "0.11826958216960802`"}], ",", 
+   RowBox[{"-", "0.12823147127078377`"}], ",", 
+   RowBox[{"-", "0.13818691147063183`"}], ",", 
+   RowBox[{"-", "0.14813539564027695`"}], ",", 
+   RowBox[{"-", "0.15807641553635868`"}], ",", 
+   RowBox[{"-", "0.16800946171347775`"}], ",", 
+   RowBox[{"-", "0.17793402343475279`"}], ",", 
+   RowBox[{"-", "0.18784958858031356`"}], ",", 
+   RowBox[{"-", "0.19775564355357436`"}], ",", 
+   RowBox[{"-", "0.20765167318510008`"}], ",", 
+   RowBox[{"-", "0.2175371606338823`"}], ",", 
+   RowBox[{"-", "0.22741158728583263`"}], ",", 
+   RowBox[{"-", "0.23727443264927497`"}], ",", 
+   RowBox[{"-", "0.24712517424722824`"}], ",", 
+   RowBox[{"-", "0.25696328750623254`"}], ",", 
+   RowBox[{"-", "0.266788245641483`"}], ",", 
+   RowBox[{"-", "0.27659951953799183`"}], ",", 
+   RowBox[{"-", "0.28639657762750936`"}], ",", 
+   RowBox[{"-", "0.2961788857608866`"}], ",", 
+   RowBox[{"-", "0.30594590707556857`"}], ",", 
+   RowBox[{"-", "0.3156971018578562`"}], ",", 
+   RowBox[{"-", "0.3254319273995738`"}], ",", 
+   RowBox[{"-", "0.33514983784872715`"}], ",", 
+   RowBox[{"-", "0.34485028405372625`"}], ",", 
+   RowBox[{"-", "0.3545327134006908`"}], ",", 
+   RowBox[{"-", "0.3641965696433377`"}], ",", 
+   RowBox[{"-", "0.3738412927248843`"}], ",", 
+   RowBox[{"-", "0.3834663185913769`"}], ",", 
+   RowBox[{"-", "0.3930713224320105`"}], ",", 
+   RowBox[{"-", "0.40265616546186617`"}], ",", 
+   RowBox[{"-", "0.4122196957398625`"}], ",", 
+   RowBox[{"-", "0.4217613379148554`"}], ",", 
+   RowBox[{"-", "0.43128051191794137`"}], ",", 
+   RowBox[{"-", "0.44077663273124323`"}], ",", 
+   RowBox[{"-", "0.45024911014402236`"}], ",", 
+   RowBox[{"-", "0.4596973484950774`"}], ",", 
+   RowBox[{"-", "0.46912074640027`"}], ",", 
+   RowBox[{"-", "0.4785186964638973`"}], ",", 
+   RowBox[{"-", "0.4878903247179348`"}], ",", 
+   RowBox[{"-", "0.49723466770420366`"}], ",", 
+   RowBox[{"-", "0.5065514505258094`"}], ",", 
+   RowBox[{"-", "0.5158404775285304`"}], ",", 
+   RowBox[{"-", "0.5251005337304766`"}], ",", 
+   RowBox[{"-", "0.5343314511203119`"}], ",", 
+   RowBox[{"-", "0.5435323076019178`"}], ",", 
+   RowBox[{"-", "0.5527040280022206`"}], ",", 
+   RowBox[{"-", "0.561845784907753`"}], ",", 
+   RowBox[{"-", "0.5709557476430123`"}], ",", 
+   RowBox[{"-", "0.5800332024946994`"}], ",", 
+   RowBox[{"-", "0.5890774663225344`"}], ",", 
+   RowBox[{"-", "0.5980878429099351`"}], ",", 
+   RowBox[{"-", "0.6070636018115831`"}], ",", 
+   RowBox[{"-", "0.6160030452610545`"}], ",", 
+   RowBox[{"-", "0.6249041096801993`"}], ",", 
+   RowBox[{"-", "0.6337675876481097`"}], ",", 
+   RowBox[{"-", "0.6425977115450167`"}], ",", 
+   RowBox[{"-", "0.6513929912211158`"}], ",", 
+   RowBox[{"-", "0.6601485933061471`"}], ",", 
+   RowBox[{"-", "0.6688632050681311`"}], ",", 
+   RowBox[{"-", "0.6775364030910651`"}], ",", 
+   RowBox[{"-", "0.6861681295533345`"}], ",", 
+   RowBox[{"-", "0.6947580660484792`"}], ",", 
+   RowBox[{"-", "0.7033050039226929`"}], ",", 
+   RowBox[{"-", "0.7118096562058095`"}], ",", 
+   RowBox[{"-", "0.7202692906988126`"}], ",", 
+   RowBox[{"-", "0.7286825315287752`"}], ",", 
+   RowBox[{"-", "0.7370496392178384`"}], ",", 
+   RowBox[{"-", "0.7453706505104811`"}], ",", 
+   RowBox[{"-", "0.7536447211931868`"}], ",", 
+   RowBox[{"-", "0.7618767773152927`"}], ",", 
+   RowBox[{"-", "0.770059451407643`"}], ",", 
+   RowBox[{"-", "0.7781856889620935`"}], ",", 
+   RowBox[{"-", "0.7862554183652123`"}], ",", 
+   RowBox[{"-", "0.7942695403246712`"}], ",", 
+   RowBox[{"-", "0.8022330577784652`"}], ",", 
+   RowBox[{"-", "0.8101473804038419`"}], ",", 
+   RowBox[{"-", "0.8180057995060436`"}], ",", 
+   RowBox[{"-", "0.8258065931602142`"}], ",", 
+   RowBox[{"-", "0.8335475528862261`"}], ",", 
+   RowBox[{"-", "0.8412377063917674`"}], ",", 
+   RowBox[{"-", "0.8488689422665254`"}], ",", 
+   RowBox[{"-", "0.8564370095056835`"}], ",", 
+   RowBox[{"-", "0.8639400272569361`"}], ",", 
+   RowBox[{"-", "0.8713892013224724`"}], ",", 
+   RowBox[{"-", "0.878768741894`"}], ",", 
+   RowBox[{"-", "0.8860745112593513`"}], ",", 
+   RowBox[{"-", "0.8933058832804661`"}], ",", 
+   RowBox[{"-", "0.9004863918538883`"}], ",", 
+   RowBox[{"-", "0.9075945653002306`"}], ",", 
+   RowBox[{"-", "0.9146259531442246`"}], ",", 
+   RowBox[{"-", "0.9215885524710641`"}], ",", 
+   RowBox[{"-", "0.9284751928088517`"}], ",", 
+   RowBox[{"-", "0.9352774340585255`"}], ",", 
+   RowBox[{"-", "0.942005687793543`"}], ",", 
+   RowBox[{"-", "0.9486691326866908`"}], ",", 
+   RowBox[{"-", "0.955245471301793`"}], ",", 
+   RowBox[{"-", "0.9617453987332021`"}], ",", 
+   RowBox[{"-", "0.9681667541906654`"}], ",", 
+   RowBox[{"-", "0.974491369158903`"}], ",", 
+   RowBox[{"-", "0.9807423739568065`"}], ",", 
+   RowBox[{"-", "0.9869069712342876`"}], ",", 
+   RowBox[{"-", "0.9929705484826248`"}], ",", 
+   RowBox[{"-", "0.9989532587458752`"}], ",", 
+   RowBox[{"-", "1.00482657164473`"}], ",", 
+   RowBox[{"-", "1.0106143823270377`"}], ",", 
+   RowBox[{"-", "1.016308465604326`"}], ",", 
+   RowBox[{"-", "1.0219004877690472`"}], ",", 
+   RowBox[{"-", "1.027406144120482`"}], ",", 
+   RowBox[{"-", "1.03279074317948`"}], ",", 
+   RowBox[{"-", "1.0380877273706761`"}], ",", 
+   RowBox[{"-", "1.043251475876042`"}], ",", 
+   RowBox[{"-", "1.0483389948985964`"}], ",", 
+   RowBox[{"-", "1.0532868632618082`"}], ",", 
+   RowBox[{"-", "1.058145585355578`"}], ",", 
+   RowBox[{"-", "1.0628609992499654`"}], ",", 
+   RowBox[{"-", "1.0674774354487209`"}], ",", 
+   RowBox[{"-", "1.0719515341930335`"}], ",", 
+   RowBox[{"-", "1.0763240217232466`"}], ",", 
+   RowBox[{"-", "1.0805655392260078`"}], ",", 
+   RowBox[{"-", "1.0846765672202312`"}], ",", 
+   RowBox[{"-", "1.0886693559173974`"}], ",", 
+   RowBox[{"-", "1.0925102617596578`"}], ",", 
+   RowBox[{"-", "1.0962369809391521`"}], ",", 
+   RowBox[{"-", "1.0998176655722691`"}], ",", 
+   RowBox[{"-", "1.103244355592373`"}], ",", 
+   RowBox[{"-", "1.1065670712756648`"}], ",", 
+   RowBox[{"-", "1.1097317104541469`"}], ",", 
+   RowBox[{"-", "1.112737956666538`"}], ",", 
+   RowBox[{"-", "1.1156119002622726`"}], ",", 
+   RowBox[{"-", "1.118330036258971`"}], ",", 
+   RowBox[{"-", "1.1208871740867452`"}], ",", 
+   RowBox[{"-", "1.1232847656885587`"}], ",", 
+   RowBox[{"-", "1.1255581897633293`"}], ",", 
+   RowBox[{"-", "1.1276670718269928`"}], ",", 
+   RowBox[{"-", "1.1296112009931`"}], ",", 
+   RowBox[{"-", "1.131390382850355`"}], ",", 
+   RowBox[{"-", "1.133004439482054`"}], ",", 
+   RowBox[{"-", "1.1344748360603376`"}], ",", 
+   RowBox[{"-", "1.1357800644276757`"}], ",", 
+   RowBox[{"-", "1.1369169090067308`"}], ",", 
+   RowBox[{"-", "1.137885256113992`"}], ",", 
+   RowBox[{"-", "1.1386850089155558`"}], ",", 
+   RowBox[{"-", "1.1393160874368085`"}], ",", 
+   RowBox[{"-", "1.1397784285704238`"}], ",", 
+   RowBox[{"-", "1.1400719860826738`"}], ",", 
+   RowBox[{"-", "1.1401967306180516`"}], ",", 
+   RowBox[{"-", "1.1401526497022076`"}], ",", 
+   RowBox[{"-", "1.139939747743197`"}], ",", 
+   RowBox[{"-", "1.1395580460310382`"}], ",", 
+   RowBox[{"-", "1.1390075827355841`"}], ",", 
+   RowBox[{"-", "1.1382884129027055`"}], ",", 
+   RowBox[{"-", "1.1374006084487869`"}], ",", 
+   RowBox[{"-", "1.1363442581535332`"}], ",", 
+   RowBox[{"-", "1.135119467651094`"}], ",", 
+   RowBox[{"-", "1.1337263594194988`"}], ",", 
+   RowBox[{"-", "1.132182183030792`"}], ",", 
+   RowBox[{"-", "1.1304818761771265`"}], ",", 
+   RowBox[{"-", "1.1286165349478154`"}], ",", 
+   RowBox[{"-", "1.1265863458754273`"}], ",", 
+   RowBox[{"-", "1.1243915119771777`"}], ",", 
+   RowBox[{"-", "1.1220520501231541`"}], ",", 
+   RowBox[{"-", "1.119571927856361`"}], ",", 
+   RowBox[{"-", "1.1169306832325188`"}], ",", 
+   RowBox[{"-", "1.1141285803738892`"}], ",", 
+   RowBox[{"-", "1.111187862021534`"}], ",", 
+   RowBox[{"-", "1.1080988638738638`"}], ",", 
+   RowBox[{"-", "1.1048516360434`"}], ",", 
+   RowBox[{"-", "1.1014738297825093`"}], ",", 
+   RowBox[{"-", "1.0979671228414647`"}], ",", 
+   RowBox[{"-", "1.0943056783526113`"}], ",", 
+   RowBox[{"-", "1.0905234975365021`"}], ",", 
+   RowBox[{"-", "1.0866032289929937`"}], ",", 
+   RowBox[{"-", "1.0825394796160681`"}], ",", 
+   RowBox[{"-", "1.0783691858909727`"}], ",", 
+   RowBox[{"-", "1.0740499356564168`"}], ",", 
+   RowBox[{"-", "1.0696333539758316`"}], ",", 
+   RowBox[{"-", "1.0650830829104125`"}], ",", 
+   RowBox[{"-", "1.060416499127166`"}], ",", 
+   RowBox[{"-", "1.055626189394655`"}], ",", 
+   RowBox[{"-", "1.0507201268760964`"}], ",", 
+   RowBox[{"-", "1.045699801324278`"}], ",", 
+   RowBox[{"-", "1.0405718018228303`"}], ",", 
+   RowBox[{"-", "1.0353367455016642`"}], ",", 
+   RowBox[{"-", "1.0299958306688515`"}], ",", 
+   RowBox[{"-", "1.0245403683758587`"}], ",", 
+   RowBox[{"-", "1.0189969326034347`"}], ",", 
+   RowBox[{"-", "1.013335412430572`"}], ",", 
+   RowBox[{"-", "1.00760824713387`"}], ",", 
+   RowBox[{"-", "1.0017673434208192`"}], ",", 
+   RowBox[{"-", "0.9958441321640448`"}], ",", 
+   RowBox[{"-", "0.9898198888477105`"}], ",", 
+   RowBox[{"-", "0.9836904052552747`"}], ",", 
+   RowBox[{"-", "0.9774935260771269`"}], ",", 
+   RowBox[{"-", "0.9711977036004895`"}], ",", 
+   RowBox[{"-", "0.964822326040753`"}], ",", 
+   RowBox[{"-", "0.9583660463342787`"}], ",", 
+   RowBox[{"-", "0.9518167143760163`"}], ",", 
+   RowBox[{"-", "0.9451982981457777`"}], ",", 
+   RowBox[{"-", "0.9385065786494965`"}], ",", 
+   RowBox[{"-", "0.9317308120690311`"}], ",", 
+   RowBox[{"-", "0.924887351547659`"}], ",", 
+   RowBox[{"-", "0.9179665904105164`"}], ",", 
+   RowBox[{"-", "0.9109626763938296`"}], ",", 
+   RowBox[{"-", "0.9038847428012847`"}], ",", 
+   RowBox[{"-", "0.8967501562561653`"}], ",", 
+   RowBox[{"-", "0.8895424355900311`"}], ",", 
+   RowBox[{"-", "0.8822629980679138`"}], ",", 
+   RowBox[{"-", "0.8749224463665701`"}], ",", 
+   RowBox[{"-", "0.8675120286374794`"}], ",", 
+   RowBox[{"-", "0.8600319790259275`"}], ",", 
+   RowBox[{"-", "0.852486504370346`"}], ",", 
+   RowBox[{"-", "0.844889198232483`"}], ",", 
+   RowBox[{"-", "0.8372340519663103`"}], ",", 
+   RowBox[{"-", "0.8295161137213299`"}], ",", 
+   RowBox[{"-", "0.8217367138176388`"}], ",", 
+   RowBox[{"-", "0.8139034711742678`"}], ",", 
+   RowBox[{"-", "0.8060229930795185`"}], ",", 
+   RowBox[{"-", "0.7980858640989548`"}], ",", 
+   RowBox[{"-", "0.7900927624705046`"}], ",", 
+   RowBox[{"-", "0.7820443572012442`"}], ",", 
+   RowBox[{"-", "0.7739453441520566`"}], ",", 
+   RowBox[{"-", "0.7657935975881908`"}], ",", 
+   RowBox[{"-", "0.7575886110789082`"}], ",", 
+   RowBox[{"-", "0.7493332551810228`"}], ",", 
+   RowBox[{"-", "0.7410299239287045`"}], ",", 
+   RowBox[{"-", "0.732680623276675`"}], ",", 
+   RowBox[{"-", "0.7242916807639973`"}], ",", 
+   RowBox[{"-", "0.715858119501097`"}], ",", 
+   RowBox[{"-", "0.7073782468972126`"}], ",", 
+   RowBox[{"-", "0.6988511261354229`"}], ",", 
+   RowBox[{"-", "0.6902782963559612`"}], ",", 
+   RowBox[{"-", "0.681663334168501`"}], ",", 
+   RowBox[{"-", "0.6730073227055203`"}], ",", 
+   RowBox[{"-", "0.6643148721805657`"}], ",", 
+   RowBox[{"-", "0.6555814434403066`"}], ",", 
+   RowBox[{"-", "0.6468075179186984`"}], ",", 
+   RowBox[{"-", "0.6379951951957`"}], ",", 
+   RowBox[{"-", "0.6291463289428487`"}], ",", 
+   RowBox[{"-", "0.620261144073359`"}], ",", 
+   RowBox[{"-", "0.611338333086523`"}], ",", 
+   RowBox[{"-", "0.6023775758097987`"}], ",", 
+   RowBox[{"-", "0.5933827047297493`"}], ",", 
+   RowBox[{"-", "0.5843564595593312`"}], ",", 
+   RowBox[{"-", "0.5752965395946462`"}], ",", 
+   RowBox[{"-", "0.566203634143135`"}], ",", 
+   RowBox[{"-", "0.5570784611862986`"}], ",", 
+   RowBox[{"-", "0.5479217468066885`"}], ",", 
+   RowBox[{"-", "0.5387341449035356`"}], ",", 
+   RowBox[{"-", "0.5295162806288627`"}], ",", 
+   RowBox[{"-", "0.5202689083882899`"}], ",", 
+   RowBox[{"-", "0.5109927040768486`"}], ",", 
+   RowBox[{"-", "0.5016879869521232`"}], ",", 
+   RowBox[{"-", "0.4923561391924131`"}], ",", 
+   RowBox[{"-", "0.48299665680442067`"}], ",", 
+   RowBox[{"-", "0.47361152530480155`"}], ",", 
+   RowBox[{"-", "0.46420108958683975`"}], ",", 
+   RowBox[{"-", "0.4547654458209545`"}], ",", 
+   RowBox[{"-", "0.4453052028594014`"}], ",", 
+   RowBox[{"-", "0.4358209634476073`"}], ",", 
+   RowBox[{"-", "0.426313324520044`"}], ",", 
+   RowBox[{"-", "0.4167828774792741`"}], ",", 
+   RowBox[{"-", "0.4072302084595182`"}], ",", 
+   RowBox[{"-", "0.39765589857597256`"}], ",", 
+   RowBox[{"-", "0.3880605241609741`"}], ",", 
+   RowBox[{"-", "0.3784446569880114`"}], ",", 
+   RowBox[{"-", "0.36880886448449757`"}], ",", 
+   RowBox[{"-", "0.359153709934117`"}], ",", 
+   RowBox[{"-", "0.34947975266951825`"}], ",", 
+   RowBox[{"-", "0.3397875482560315`"}], ",", 
+   RowBox[{"-", "0.330077648667051`"}], ",", 
+   RowBox[{"-", "0.3203506024516523`"}], ",", 
+   RowBox[{"-", "0.3106069548949958`"}], ",", 
+   RowBox[{"-", "0.30084724817199615`"}], ",", 
+   RowBox[{"-", "0.29107202149472367`"}], ",", 
+   RowBox[{"-", "0.2812818112539464`"}], ",", 
+   RowBox[{"-", "0.2714771511552208`"}], ",", 
+   RowBox[{"-", "0.26165857234988105`"}], ",", 
+   RowBox[{"-", "0.25182660356127606`"}], ",", 
+   RowBox[{"-", "0.24198177120655484`"}], ",", 
+   RowBox[{"-", "0.23212459951431333`"}], ",", 
+   RowBox[{"-", "0.22225561063836397`"}], ",", 
+   RowBox[{"-", "0.21237532476789708`"}], ",", 
+   RowBox[{"-", "0.20248426023426316`"}], ",", 
+   RowBox[{"-", "0.19258293361462167`"}], ",", 
+   RowBox[{"-", "0.18267185983265846`"}], ",", 
+   RowBox[{"-", "0.17275155225658534`"}], ",", 
+   RowBox[{"-", "0.16282252279460083`"}], ",", 
+   RowBox[{"-", "0.15288528198801232`"}], ",", 
+   RowBox[{"-", "0.14294033910217965`"}], ",", 
+   RowBox[{"-", "0.13298820221545604`"}], ",", 
+   RowBox[{"-", "0.12302937830627042`"}], ",", 
+   RowBox[{"-", "0.11306437333852075`"}], ",", 
+   RowBox[{"-", "0.10309369234540951`"}], ",", 
+   RowBox[{"-", "0.09311783951186643`"}], ",", 
+   RowBox[{"-", "0.08313731825569705`"}], ",", 
+   RowBox[{"-", "0.07315263130757468`"}], ",", 
+   RowBox[{"-", "0.06316428079001969`"}], ",", 
+   RowBox[{"-", "0.05317276829547502`"}], ",", 
+   RowBox[{"-", "0.04317859496360857`"}], ",", 
+   RowBox[{"-", "0.0331822615579457`"}], ",", 
+   RowBox[{"-", "0.0231842685419647`"}], ",", 
+   RowBox[{"-", "0.013185116154754588`"}], ",", 
+   RowBox[{"-", "0.00318530448635795`"}], ",", "0.0068146664475537844`", ",", 
+   "0.01681429664505644`", ",", "0.026813086071899542`", ",", 
+   "0.036810534592639006`", ",", "0.04680614189547079`", ",", 
+   "0.056799407416784714`", ",", "0.06678983026536273`", ",", 
+   "0.07677690914609851`", ",", "0.08676014228313858`", ",", 
+   "0.09673902734231092`", ",", "0.10671306135273756`", ",", 
+   "0.1166817406274988`", ",", "0.12664456068323957`", ",", 
+   "0.13660101615857217`", ",", "0.14655060073115647`", ",", 
+   "0.15649280703331722`", ",", "0.16642712656605155`", ",", 
+   "0.17635304961129317`", ",", "0.18627006514226124`", ",", 
+   "0.19617766073174775`", ",", "0.20607532245816382`", ",", 
+   "0.2159625348091824`", ",", "0.22583878058277312`", ",", 
+   "0.23570354078544722`", ",", "0.2455562945274936`", ",", 
+   "0.25539651891500065`", ",", "0.2652236889384122`", ",", 
+   "0.27503727735738337`", ",", "0.2848367545816616`", ",", 
+   "0.2946215885477235`", ",", "0.3043912445908492`", ",", 
+   "0.3141451853123235`", ",", "0.3238828704414071`", ",", 
+   "0.3336037566917179`", ",", "0.3433072976116032`", ",", 
+   "0.35299294342808263`", ",", "0.3626601408838831`", ",", 
+   "0.37230833306706934`", ",", "0.38193695923270565`", ",", 
+   "0.39154545461595686`", ",", "0.40113325023597696`", ",", 
+   "0.4106997726898624`", ",", "0.4202444439359086`", ",", 
+   "0.4297666810652921`", ",", "0.439265896061255`", ",", 
+   "0.44874149554474674`", ",", "0.45819288050538853`", ",", 
+   "0.4676194460164841`", ",", "0.4770205809326744`", ",", 
+   "0.48639682858670547`", ",", "0.4957460212671576`", ",", 
+   "0.505068370774915`", ",", "0.5143626338288043`", ",", 
+   "0.5236285215062587`", ",", "0.5328652686212583`", ",", 
+   "0.5420721913490749`", ",", "0.5512486757563407`", ",", 
+   "0.5603940366578277`", ",", "0.5695075639713492`", ",", 
+   "0.5785885715693339`", ",", "0.5876363677434294`", ",", 
+   "0.5966508264437721`", ",", "0.6056338416671334`", ",", 
+   "0.6145812456125784`", ",", "0.6234903377225903`", ",", 
+   "0.6323621524747559`", ",", "0.6411977236637667`", ",", 
+   "0.6499963334181016`", ",", "0.658755879403302`", ",", 
+   "0.6674743904628527`", ",", "0.6761538149483117`", ",", 
+   "0.6847948613274322`", ",", "0.6933946777671507`", ",", 
+   "0.7019508112663754`", ",", "0.7104610535251968`", ",", 
+   "0.7189243510822196`", ",", "0.7273409435651619`", ",", 
+   "0.7357167272137982`", ",", "0.744049384306578`", ",", 
+   "0.7523352089108406`", ",", "0.7605726130570284`", ",", 
+   "0.7687585068311538`", ",", "0.7768881595873937`", ",", 
+   "0.7849712082107964`", ",", "0.7929999118781225`", ",", 
+   "0.8009729192293958`", ",", "0.8088895784117119`", ",", 
+   "0.8167498781027284`", ",", "0.8245695520690758`", ",", 
+   "0.8323259312352849`", ",", "0.8400201428264817`", ",", 
+   "0.8476524594768364`", ",", "0.8552326966761413`", ",", 
+   "0.8627546119220496`", ",", "0.8702101914239692`", ",", 
+   "0.8775956718370235`", ",", "0.8849109394619273`", ",", 
+   "0.8921642512056408`", ",", "0.8993465485058844`", ",", 
+   "0.9064579924954376`", ",", "0.913514190581029`", ",", 
+   "0.9204876137047145`", ",", "0.9273758397578672`", ",", 
+   "0.9341993695166606`", ",", "0.9409448871358892`", ",", 
+   "0.9476049735259053`", ",", "0.9542028678120758`", ",", 
+   "0.9607193178628212`", ",", "0.9671432621587133`", ",", 
+   "0.9734972387521165`", ",", "0.9797573576843377`", ",", 
+   "0.9859257673588693`", ",", "0.9920204041579975`", ",", 
+   "0.9980061694648458`", ",", "1.0039008905092717`", ",", 
+   "1.0097002917785873`", ",", "1.0154029932027613`", ",", 
+   "1.0210252799126847`", ",", "1.0265309752697245`", ",", 
+   "1.03195030329347`", ",", "1.037240771677827`", ",", "1.0424489635652485`",
+    ",", "1.0475271241751192`", ",", "1.0525199342538603`", ",", 
+   "1.0573761365872894`", ",", "1.0621291442637382`", ",", 
+   "1.0667379993628265`", ",", "1.0712570776860983`", ",", 
+   "1.0756302416691215`", ",", "1.0798998921161436`", ",", 
+   "1.0840367386932865`", ",", "1.088036620319454`", ",", 
+   "1.0919147601471118`", ",", "1.095640180534868`", ",", 
+   "1.099248459285262`", ",", "1.1027185975764144`", ",", 
+   "1.1060326389913449`", ",", "1.1092255709210772`", ",", 
+   "1.1122710556511413`", ",", "1.1151571613961802`", ",", 
+   "1.1178965381898884`", ",", "1.1204941024260064`", ",", 
+   "1.1229295306675218`", ",", "1.1252025793736398`", ",", 
+   "1.1273220850379173`", ",", "1.1293051331885195`", ",", 
+   "1.1311222037584527`", ",", "1.1327731150421745`", ",", 
+   "1.1342577019499325`", ",", "1.1355758160242726`", ",", 
+   "1.1367273254548855`", ",", "1.137725975823817`", ",", 
+   "1.1385565807976588`", ",", "1.1392177079232595`", ",", 
+   "1.1397092910884579`", ",", "1.1400312811353468`", ",", 
+   "1.1401836458651902`", ",", "1.1401663700416416`", ",", 
+   "1.139979455392269`", ",", "1.1396229206083823`", ",", 
+   "1.139096801343162`", ",", "1.1384011502080966`", ",", 
+   "1.1375360367677196`", ",", "1.1365063105128739`", ",", 
+   "1.1353208583001126`", ",", "1.1339688269391845`", ",", 
+   "1.1324503516320992`", ",", "1.1307655842251219`", ",", 
+   "1.128914693193589`", ",", "1.126897863625061`", ",", 
+   "1.1247527997364912`", ",", "1.1224466597080933`", ",", 
+   "1.1199781884309914`", ",", "1.1173476327502567`", ",", 
+   "1.1145822781092385`", ",", "1.111663687211746`", ",", 
+   "1.108585778065567`", ",", "1.1053703325848023`", ",", 
+   "1.1020244710353306`", ",", "1.0985225820217128`", ",", 
+   "1.0948938153531416`", ",", "1.0911372593989952`", ",", 
+   "1.0872280617543735`", ",", "1.0832063471392344`", ",", 
+   "1.0790389440306856`", ",", "1.074751477481561`", ",", 
+   "1.070348363486961`", ",", "1.0658110117476676`", ",", 
+   "1.0611727587861126`", ",", "1.0563944104886487`", ",", 
+   "1.051514519983351`", ",", "1.0464969552230723`", ",", 
+   "1.0413994543131737`", ",", "1.0361704548460091`", ",", 
+   "1.030857029142361`", ",", "1.0254205105539056`", ",", 
+   "1.0198874673174951`", ",", "1.014252180345127`", ",", 
+   "1.008522692631989`", ",", "1.0027107498752583`", ",", 
+   "0.9967899856005732`", ",", "0.9907875642295955`", ",", 
+   "0.9846795549178827`", ",", "0.9784857353940348`", ",", 
+   "0.9722130312818583`", ",", "0.9658424525737366`", ",", 
+   "0.9593967250722635`", ",", "0.95286864729451`", ",", 
+   "0.9462520255285392`", ",", "0.9395756623636156`", ",", 
+   "0.932818857542641`", ",", "0.9259785862828515`", ",", 
+   "0.9190717713044322`", ",", "0.9120853998028543`", ",", 
+   "0.9050184095777164`", ",", "0.8978848237107869`", ",", 
+   "0.8906924227617387`", ",", "0.8834295276346711`", ",", 
+   "0.8760966418489664`", ",", "0.8686941090738824`", ",", 
+   "0.8612285345467363`", ",", "0.8536969149275986`", ",", 
+   "0.84610132489288`", ",", "0.8384547794155782`", ",", 
+   "0.8307513419523365`", ",", "0.8229845087513696`", ",", 
+   "0.81515653550599`", ",", "0.8072772058607641`", ",", 
+   "0.7993518784848803`", ",", "0.791369864126321`", ",", 
+   "0.7833321078594686`", ",", "0.7752391634191742`", ",", 
+   "0.7670920966026084`", ",", "0.758896742375918`", ",", 
+   "0.7506513098143552`", ",", "0.7423577600164304`", ",", 
+   "0.7340174215250045`", ",", "0.7256310960951518`", ",", 
+   "0.7172008470920729`", ",", "0.7087296928925964`", ",", 
+   "0.7002112695417834`", ",", "0.6916473421685662`", ",", 
+   "0.6830403657101609`", ",", "0.6743920061027379`", ",", 
+   "0.6657023278706324`", ",", "0.6569718892651477`", ",", 
+   "0.6482051817632769`", ",", "0.6393998557977699`", ",", 
+   "0.6305580120179616`", ",", "0.6216796136133267`", ",", 
+   "0.6127633300817084`", ",", "0.603809347873041`", ",", 
+   "0.5948199590498707`", ",", "0.5857962842148869`", ",", 
+   "0.5767390507207985`", ",", "0.5676518125157861`", ",", 
+   "0.5585324010919661`", ",", "0.5493812424265254`", ",", 
+   "0.5401990600985092`", ",", "0.5309865241945158`", ",", 
+   "0.5217442312639359`", ",", "0.5124729608207041`", ",", 
+   "0.5031732837558787`", ",", "0.49384578312751687`", ",", 
+   "0.48449121914967075`", ",", "0.47510937331489367`", ",", 
+   "0.46570173162518697`", ",", "0.4562689029682119`", ",", 
+   "0.4468114901616515`", ",", "0.4373313393524532`", ",", 
+   "0.42782767569907665`", ",", "0.4183010850861314`", ",", 
+   "0.4087521559869986`", ",", "0.39918147173859614`", ",", 
+   "0.38958961078421883`", ",", "0.3799771469036961`", ",", 
+   "0.37034464943183276`", ",", "0.36069268346598266`", ",", 
+   "0.35102181006357974`", ",", "0.3413325864303283`", ",", 
+   "0.3316255660997256`", ",", "0.32190129910452436`", ",", 
+   "0.3121603321406968`", ",", "0.30240320872441134`", ",", 
+   "0.29263046934251224`", ",", "0.2828426515969122`", ",", 
+   "0.2730402903433441`", ",", "0.2632239178248215`", ",", 
+   "0.25339406380017193`", ",", "0.24355125566796754`", ",", 
+   "0.23369601858615996`", ",", "0.22382887558770279`", ",", 
+   "0.2139503476924401`", ",", "0.2040609540154858`", ",", 
+   "0.19416121187236482`", ",", "0.18425163688111285`", ",", 
+   "0.17433274306155394`", ",", "0.1644050429319536`", ",", 
+   "0.15446904760323488`", ",", "0.14452526687093614`", ",", 
+   "0.13457420930507855`", ",", "0.1246163823381162`", ",", 
+   "0.11465229235109664`", ",", "0.10468244475821654`", ",", 
+   "0.09470734408988776`", ",", "0.08472749407446216`", ",", 
+   "0.07474339771874614`", ",", "0.06475555738743306`", ",", 
+   "0.05476447488157679`", ",", "0.04477065151623826`", ",", 
+   "0.03477458819739742`", ",", "0.024776785498282064`", ",", 
+   "0.014777743735201316`", ",", "0.004777963043011581`", ",", 
+   RowBox[{"-", "0.005222056548406283`"}], ",", 
+   RowBox[{"-", "0.01522181502827323`"}], ",", 
+   RowBox[{"-", "0.025220812303907953`"}], ",", 
+   RowBox[{"-", "0.03521854811399952`"}], ",", 
+   RowBox[{"-", "0.04521452195284805`"}], ",", 
+   RowBox[{"-", "0.05520823299457472`"}], ",", 
+   RowBox[{"-", "0.0651991800168573`"}], ",", 
+   RowBox[{"-", "0.07518686132406611`"}], ",", 
+   RowBox[{"-", "0.08517077466968583`"}], ",", 
+   RowBox[{"-", "0.09515041717790429`"}], ",", 
+   RowBox[{"-", "0.1051252852642466`"}], ",", 
+   RowBox[{"-", "0.11509487455513119`"}], ",", 
+   RowBox[{"-", "0.12505867980620844`"}], ",", 
+   RowBox[{"-", "0.13501619481937546`"}], ",", 
+   RowBox[{"-", "0.14496691235829343`"}], ",", 
+   RowBox[{"-", "0.1549103240622911`"}], ",", 
+   RowBox[{"-", "0.16484592035849516`"}], ",", 
+   RowBox[{"-", "0.17477319037203226`"}], ",", 
+   RowBox[{"-", "0.18469162183414126`"}], ",", 
+   RowBox[{"-", "0.1946007009880256`"}], ",", 
+   RowBox[{"-", "0.20449991249225602`"}], ",", 
+   RowBox[{"-", "0.2143887393215606`"}], ",", 
+   RowBox[{"-", "0.2242666626647671`"}], ",", 
+   RowBox[{"-", "0.23413316181971272`"}], ",", 
+   RowBox[{"-", "0.24398771408488595`"}], ",", 
+   RowBox[{"-", "0.25382979464756555`"}], ",", 
+   RowBox[{"-", "0.26365887646820135`"}], ",", 
+   RowBox[{"-", "0.27347443016077`"}], ",", 
+   RowBox[{"-", "0.28327592386880646`"}], ",", 
+   RowBox[{"-", "0.29306301059423395`"}], ",", 
+   RowBox[{"-", "0.30283514760299785`"}], ",", 
+   RowBox[{"-", "0.31259166515086945`"}], ",", 
+   RowBox[{"-", "0.32233202423339596`"}], ",", 
+   RowBox[{"-", "0.332055682896539`"}], ",", 
+   RowBox[{"-", "0.34176209609008973`"}], ",", 
+   RowBox[{"-", "0.3514507155148836`"}], ",", 
+   RowBox[{"-", "0.3611209894633638`"}], ",", 
+   RowBox[{"-", "0.37077236265299957`"}], ",", 
+   RowBox[{"-", "0.38040427605205634`"}], ",", 
+   RowBox[{"-", "0.39001616669711414`"}], ",", 
+   RowBox[{"-", "0.3996074675017343`"}], ",", 
+   RowBox[{"-", "0.40917760705558803`"}], ",", 
+   RowBox[{"-", "0.41872600941330584`"}], ",", 
+   RowBox[{"-", "0.4282520938722363`"}], ",", 
+   RowBox[{"-", "0.43775527473822434`"}], ",", 
+   RowBox[{"-", "0.44723496107841837`"}], ",", 
+   RowBox[{"-", "0.45669055646005213`"}], ",", 
+   RowBox[{"-", "0.4661214586739689`"}], ",", 
+   RowBox[{"-", "0.47552705944159346`"}], ",", 
+   RowBox[{"-", "0.4849066488891234`"}], ",", 
+   RowBox[{"-", "0.49425918564533916`"}], ",", 
+   RowBox[{"-", "0.5035838743624469`"}], ",", 
+   RowBox[{"-", "0.5128821959628067`"}], ",", 
+   RowBox[{"-", "0.5221528589920524`"}], ",", 
+   RowBox[{"-", "0.5313947484518852`"}], ",", 
+   RowBox[{"-", "0.5406069723675458`"}], ",", 
+   RowBox[{"-", "0.5497888476571275`"}], ",", 
+   RowBox[{"-", "0.5589397641549368`"}], ",", 
+   RowBox[{"-", "0.5680590408301173`"}], ",", 
+   RowBox[{"-", "0.5771459564369902`"}], ",", 
+   RowBox[{"-", "0.5861998066060167`"}], ",", 
+   RowBox[{"-", "0.595219899341272`"}], ",", 
+   RowBox[{"-", "0.6042055149917156`"}], ",", 
+   RowBox[{"-", "0.613156006515719`"}], ",", 
+   RowBox[{"-", "0.6220716496175959`"}], ",", 
+   RowBox[{"-", "0.630949986033052`"}], ",", 
+   RowBox[{"-", "0.6397925420917817`"}], ",", 
+   RowBox[{"-", "0.6485982556890073`"}], ",", 
+   RowBox[{"-", "0.6573650724511971`"}], ",", 
+   RowBox[{"-", "0.6660912000770727`"}], ",", 
+   RowBox[{"-", "0.6747757050927827`"}], ",", 
+   RowBox[{"-", "0.6834184543459539`"}], ",", 
+   RowBox[{"-", "0.6920251103546019`"}], ",", 
+   RowBox[{"-", "0.7005905635417499`"}], ",", 
+   RowBox[{"-", "0.7091091549131289`"}], ",", 
+   RowBox[{"-", "0.7175811737724961`"}], ",", 
+   RowBox[{"-", "0.7260068496345855`"}], ",", 
+   RowBox[{"-", "0.7343856671682799`"}], ",", 
+   RowBox[{"-", "0.7427208886719725`"}], ",", 
+   RowBox[{"-", "0.7510165936153369`"}], ",", 
+   RowBox[{"-", "0.7592638823547733`"}], ",", 
+   RowBox[{"-", "0.7674602078363969`"}], ",", 
+   RowBox[{"-", "0.7756020450744303`"}], ",", 
+   RowBox[{"-", "0.7836858259325145`"}], ",", 
+   RowBox[{"-", "0.7917222954978447`"}], ",", 
+   RowBox[{"-", "0.799706344759634`"}], ",", 
+   RowBox[{"-", "0.8076346226511513`"}], ",", 
+   RowBox[{"-", "0.815506542464034`"}], ",", 
+   RowBox[{"-", "0.8233214213114161`"}], ",", 
+   RowBox[{"-", "0.8310907241264293`"}], ",", 
+   RowBox[{"-", "0.8387987531283803`"}], ",", 
+   RowBox[{"-", "0.8464446205441789`"}], ",", 
+   RowBox[{"-", "0.854027564252242`"}], ",", 
+   RowBox[{"-", "0.8615574089569227`"}], ",", 
+   RowBox[{"-", "0.8690275651882273`"}], ",", 
+   RowBox[{"-", "0.8764259842113293`"}], ",", 
+   RowBox[{"-", "0.8837491234347646`"}], ",", 
+   RowBox[{"-", "0.8910133599129668`"}], ",", 
+   RowBox[{"-", "0.8982108895826099`"}], ",", 
+   RowBox[{"-", "0.9053352262948646`"}], ",", 
+   RowBox[{"-", "0.9123907832198738`"}], ",", 
+   RowBox[{"-", "0.9193828788358271`"}], ",", 
+   RowBox[{"-", "0.9262903793690532`"}], ",", 
+   RowBox[{"-", "0.9331107101962139`"}], ",", 
+   RowBox[{"-", "0.9398750750052847`"}], ",", 
+   RowBox[{"-", "0.9465558236804149`"}], ",", 
+   RowBox[{"-", "0.9531502742819676`"}], ",", 
+   RowBox[{"-", "0.9596879704660888`"}], ",", 
+   RowBox[{"-", "0.9661306824231864`"}], ",", 
+   RowBox[{"-", "0.9724812632464185`"}], ",", 
+   RowBox[{"-", "0.9787646840516475`"}], ",", 
+   RowBox[{"-", "0.9849490338657756`"}], ",", 
+   RowBox[{"-", "0.9910528320419743`"}], ",", 
+   RowBox[{"-", "0.9970609287530956`"}], ",", 
+   RowBox[{"-", "1.0029580030445104`"}], ",", 
+   RowBox[{"-", "1.0087849565122409`"}], ",", 
+   RowBox[{"-", "1.014499288564972`"}], ",", 
+   RowBox[{"-", "1.0201337209551786`"}], ",", 
+   RowBox[{"-", "1.0256624886556382`"}], ",", 
+   RowBox[{"-", "1.0310903300216752`"}], ",", 
+   RowBox[{"-", "1.0364141721355011`"}], ",", 
+   RowBox[{"-", "1.041621113295962`"}], ",", 
+   RowBox[{"-", "1.0467337174749238`"}], ",", 
+   RowBox[{"-", "1.0517253651045162`"}], ",", 
+   RowBox[{"-", "1.0566134641052998`"}], ",", 
+   RowBox[{"-", "1.0613745779259465`"}], ",", 
+   RowBox[{"-", "1.0660216671084322`"}], ",", 
+   RowBox[{"-", "1.0705422436196363`"}], ",", 
+   RowBox[{"-", "1.0749417100996743`"}], ",", 
+   RowBox[{"-", "1.0792306564272485`"}], ",", 
+   RowBox[{"-", "1.0833729109180532`"}], ",", 
+   RowBox[{"-", "1.0874139958470797`"}], ",", 
+   RowBox[{"-", "1.0913033234561615`"}], ",", 
+   RowBox[{"-", "1.0950639474084922`"}], ",", 
+   RowBox[{"-", "1.0986939051944027`"}], ",", 
+   RowBox[{"-", "1.1021690527548744`"}], ",", 
+   RowBox[{"-", "1.1055258254767644`"}], ",", 
+   RowBox[{"-", "1.1087408519794664`"}], ",", 
+   RowBox[{"-", "1.1117975846010992`"}], ",", 
+   RowBox[{"-", "1.1147123251058482`"}], ",", 
+   RowBox[{"-", "1.117481687652768`"}], ",", 
+   RowBox[{"-", "1.120090136864918`"}], ",", 
+   RowBox[{"-", "1.12253741189955`"}], ",", 
+   RowBox[{"-", "1.1248518823223592`"}], ",", 
+   RowBox[{"-", "1.1270131997447304`"}], ",", 
+   RowBox[{"-", "1.1290098296562079`"}], ",", 
+   RowBox[{"-", "1.1308415723954655`"}], ",", 
+   RowBox[{"-", "1.1325082447897556`"}], ",", 
+   RowBox[{"-", "1.134023741481829`"}], ",", 
+   RowBox[{"-", "1.1353825786519338`"}], ",", 
+   RowBox[{"-", "1.1365730717820017`"}], ",", 
+   RowBox[{"-", "1.137595101823712`"}], ",", 
+   RowBox[{"-", "1.1384485665749122`"}], ",", 
+   RowBox[{"-", "1.139133380689838`"}], ",", 
+   RowBox[{"-", "1.139649475687649`"}], ",", 
+   RowBox[{"-", "1.1399967999592753`"}], ",", 
+   RowBox[{"-", "1.1401753187725792`"}], ",", 
+   RowBox[{"-", "1.1401850142758283`"}], ",", 
+   RowBox[{"-", "1.14002588549948`"}], ",", 
+   RowBox[{"-", "1.1396979483562797`"}], ",", 
+   RowBox[{"-", "1.1392012356396686`"}], ",", 
+   RowBox[{"-", "1.1385357970205034`"}], ",", 
+   RowBox[{"-", "1.1377016990420927`"}], ",", 
+   RowBox[{"-", "1.1366990251135387`"}], ",", 
+   RowBox[{"-", "1.1355278755013989`"}], ",", 
+   RowBox[{"-", "1.1341883673196582`"}], ",", 
+   RowBox[{"-", "1.1326890983392368`"}], ",", 
+   RowBox[{"-", "1.1310413964969712`"}], ",", 
+   RowBox[{"-", "1.1292286043274944`"}], ",", 
+   RowBox[{"-", "1.1272509031085125`"}], ",", 
+   RowBox[{"-", "1.1251084906084998`"}], ",", 
+   RowBox[{"-", "1.1228081694591459`"}], ",", 
+   RowBox[{"-", "1.120379422462911`"}], ",", 
+   RowBox[{"-", "1.117789472360839`"}], ",", 
+   RowBox[{"-", "1.1150385781457828`"}], ",", 
+   RowBox[{"-", "1.1121385246060704`"}], ",", 
+   RowBox[{"-", "1.1090999930957803`"}], ",", 
+   RowBox[{"-", "1.105903131790608`"}], ",", 
+   RowBox[{"-", "1.1025582720146718`"}], ",", 
+   RowBox[{"-", "1.0991009281138568`"}], ",", 
+   RowBox[{"-", "1.0954887332856502`"}], ",", 
+   RowBox[{"-", "1.0917403080017842`"}], ",", 
+   RowBox[{"-", "1.0878684360492619`"}], ",", 
+   RowBox[{"-", "1.0838447613331534`"}], ",", 
+   RowBox[{"-", "1.079713739650185`"}], ",", 
+   RowBox[{"-", "1.075441890470872`"}], ",", 
+   RowBox[{"-", "1.0710521224049885`"}], ",", 
+   RowBox[{"-", "1.0665482998330498`"}], ",", 
+   RowBox[{"-", "1.0619122405046189`"}], ",", 
+   RowBox[{"-", "1.0571675998635321`"}], ",", 
+   RowBox[{"-", "1.0522896686008074`"}], ",", 
+   RowBox[{"-", "1.0473142024622424`"}], ",", 
+   RowBox[{"-", "1.0422103213534535`"}], ",", 
+   RowBox[{"-", "1.0370192447193716`"}], ",", 
+   RowBox[{"-", "1.0317050650562984`"}], ",", 
+   RowBox[{"-", "1.026292809907161`"}], ",", 
+   RowBox[{"-", "1.020772351709622`"}], ",", 
+   RowBox[{"-", "1.0151532052578047`"}], ",", 
+   RowBox[{"-", "1.009446149524555`"}], ",", 
+   RowBox[{"-", "1.0036317675598552`"}], ",", 
+   RowBox[{"-", "0.9977447745012772`"}], ",", 
+   RowBox[{"-", "0.9917458128964348`"}], ",", 
+   RowBox[{"-", "0.985656510679793`"}], ",", 
+   RowBox[{"-", "0.9794792612007388`"}], ",", 
+   RowBox[{"-", "0.9732030425428814`"}], ",", 
+   RowBox[{"-", "0.9668662822484819`"}], ",", 
+   RowBox[{"-", "0.9604312518053293`"}], ",", 
+   RowBox[{"-", "0.9539069536489669`"}], ",", 
+   RowBox[{"-", "0.9473192263213096`"}], ",", 
+   RowBox[{"-", "0.9406446965847223`"}], ",", 
+   RowBox[{"-", "0.933892927807737`"}], ",", 
+   RowBox[{"-", "0.9270795173880556`"}], ",", 
+   RowBox[{"-", "0.9201795216517404`"}], ",", 
+   RowBox[{"-", "0.913194186041936`"}], ",", 
+   RowBox[{"-", "0.9061511938264661`"}], ",", 
+   RowBox[{"-", "0.8990326666188487`"}], ",", 
+   RowBox[{"-", "0.891840912664253`"}], ",", 
+   RowBox[{"-", "0.8845888616498372`"}], ",", 
+   RowBox[{"-", "0.8772719686939342`"}], ",", 
+   RowBox[{"-", "0.8698803410356596`"}], ",", 
+   RowBox[{"-", "0.862415791004164`"}], ",", 
+   RowBox[{"-", "0.8548975533094137`"}], ",", 
+   RowBox[{"-", "0.8473199567406643`"}], ",", 
+   RowBox[{"-", "0.8396793483643664`"}], ",", 
+   RowBox[{"-", "0.8319769326954002`"}], ",", 
+   RowBox[{"-", "0.8242186571118487`"}], ",", 
+   RowBox[{"-", "0.8164088408148711`"}], ",", 
+   RowBox[{"-", "0.8085417728302631`"}], ",", 
+   RowBox[{"-", "0.8006185111478386`"}], ",", 
+   RowBox[{"-", "0.7926395909920175`"}], ",", 
+   RowBox[{"-", "0.7846134291591589`"}], ",", 
+   RowBox[{"-", "0.7765346998547513`"}], ",", 
+   RowBox[{"-", "0.7683984732688319`"}], ",", 
+   RowBox[{"-", "0.7602070553556359`"}], ",", 
+   RowBox[{"-", "0.7519643395008667`"}], ",", 
+   RowBox[{"-", "0.7436756759954963`"}], ",", 
+   RowBox[{"-", "0.735347217918693`"}], ",", 
+   RowBox[{"-", "0.726972607878055`"}], ",", 
+   RowBox[{"-", "0.7185514014517702`"}], ",", 
+   RowBox[{"-", "0.7100838339216472`"}], ",", 
+   RowBox[{"-", "0.7015700740802416`"}], ",", 
+   RowBox[{"-", "0.6930088030080227`"}], ",", 
+   RowBox[{"-", "0.6844108267178337`"}], ",", 
+   RowBox[{"-", "0.6757720379657498`"}], ",", 
+   RowBox[{"-", "0.6670915961769446`"}], ",", 
+   RowBox[{"-", "0.6583696073052345`"}], ",", 
+   RowBox[{"-", "0.6496068207437669`"}], ",", 
+   RowBox[{"-", "0.6408048557282897`"}], ",", 
+   RowBox[{"-", "0.631965879664533`"}], ",", 
+   RowBox[{"-", "0.623091426207134`"}], ",", 
+   RowBox[{"-", "0.6141833147476949`"}], ",", 
+   RowBox[{"-", "0.6052368592009301`"}], ",", 
+   RowBox[{"-", "0.5962547844301985`"}], ",", 
+   RowBox[{"-", "0.5872381819558723`"}], ",", 
+   RowBox[{"-", "0.5781877753206921`"}], ",", 
+   RowBox[{"-", "0.5691042580402361`"}], ",", 
+   RowBox[{"-", "0.5599883268207909`"}], ",", 
+   RowBox[{"-", "0.5508407001874444`"}], ",", 
+   RowBox[{"-", "0.5416620744602652`"}], ",", 
+   RowBox[{"-", "0.5324530513666641`"}], ",", 
+   RowBox[{"-", "0.5232143628453908`"}], ",", 
+   RowBox[{"-", "0.5139489757310417`"}], ",", 
+   RowBox[{"-", "0.50465455804339`"}], ",", 
+   RowBox[{"-", "0.49533270735169327`"}], ",", 
+   RowBox[{"-", "0.48598311256426313`"}], ",", 
+   RowBox[{"-", "0.47660638125253485`"}], ",", 
+   RowBox[{"-", "0.46720352667790205`"}], ",", 
+   RowBox[{"-", "0.457775317914878`"}], ",", 
+   RowBox[{"-", "0.4483223629216723`"}], ",", 
+   RowBox[{"-", "0.4388452636080272`"}], ",", 
+   RowBox[{"-", "0.4293446161266609`"}], ",", 
+   RowBox[{"-", "0.41982101114828113`"}], ",", 
+   RowBox[{"-", "0.4102750341215072`"}], ",", 
+   RowBox[{"-", "0.4007072655188605`"}], ",", 
+   RowBox[{"-", "0.39111828106989943`"}], ",", 
+   RowBox[{"-", "0.38150865198246803`"}], ",", 
+   RowBox[{"-", "0.37187894515293934`"}], ",", 
+   RowBox[{"-", "0.36222972336625586`"}], ",", 
+   RowBox[{"-", "0.35256154548651164`"}], ",", 
+   RowBox[{"-", "0.34287496663872086`"}], ",", 
+   RowBox[{"-", "0.33317053838242605`"}], ",", 
+   RowBox[{"-", "0.3234492586012206`"}], ",", 
+   RowBox[{"-", "0.313711188358223`"}], ",", 
+   RowBox[{"-", "0.3039568476736384`"}], ",", 
+   RowBox[{"-", "0.29418677948939753`"}], ",", 
+   RowBox[{"-", "0.28440152373924443`"}], ",", 
+   RowBox[{"-", "0.27460161749285444`"}], ",", 
+   RowBox[{"-", "0.2647875950942727`"}], ",", 
+   RowBox[{"-", "0.25495998829508937`"}], ",", 
+   RowBox[{"-", "0.24511932638268033`"}], ",", 
+   RowBox[{"-", "0.23526613630384952`"}], ",", 
+   RowBox[{"-", "0.2254009427841815`"}], ",", 
+   RowBox[{"-", "0.215524268443388`"}], ",", 
+   RowBox[{"-", "0.205636633906919`"}], ",", 
+   RowBox[{"-", "0.1957385579140876`"}], ",", 
+   RowBox[{"-", "0.18583055742295573`"}], ",", 
+   RowBox[{"-", "0.17591314771217811`"}], ",", 
+   RowBox[{"-", "0.1659868424800487`"}], ",", 
+   RowBox[{"-", "0.15605215394092323`"}], ",", 
+   RowBox[{"-", "0.1461095929192159`"}], ",", 
+   RowBox[{"-", "0.1361596689411476`"}], ",", 
+   RowBox[{"-", "0.12620289032441576`"}], ",", 
+   RowBox[{"-", "0.11623976426594637`"}], ",", 
+   RowBox[{"-", "0.10627079692789332`"}], ",", 
+   RowBox[{"-", "0.0962964935220081`"}], ",", 
+   RowBox[{"-", "0.08631735839255672`"}], ",", 
+   RowBox[{"-", "0.07633389509789575`"}], ",", 
+   RowBox[{"-", "0.06634660649085015`"}], ",", 
+   RowBox[{"-", "0.05635599479801987`"}], ",", 
+   RowBox[{"-", "0.0463625616981399`"}], ",", 
+   RowBox[{"-", "0.036366808399613364`"}], ",", 
+   RowBox[{"-", "0.026369235717347207`"}], ",", 
+   RowBox[{"-", "0.016370344148979664`"}], ",", 
+   RowBox[{"-", "0.0063706339506496585`"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.9385483956769085`*^9, 3.938548398125887*^9}, 
+   3.938587135358919*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"4c8dd305-b0c5-1a4f-b1cb-b0e70cedb74f"]
+}, Open  ]]
+},
+WindowSize->{1152, 579.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8ea2d19f-9d81-5a40-a55f-067d51e6cbff"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 14127, 241, 102, "Input",ExpressionUUID->"16ccbae5-4ff1-694d-9103-c3b8299eb013"],
+Cell[14706, 265, 48714, 946, 1844, "Output",ExpressionUUID->"4c8dd305-b0c5-1a4f-b1cb-b0e70cedb74f"]
+}, Open  ]]
+}
+]
+*)
+

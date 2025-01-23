@@ -99,23 +99,23 @@ fn avg_loss(v: &Vec<TaylorApprox>) -> f64 {
     v.iter().map(|ta| ta.loss.unwrap_or(0.)).sum::<f64>() / v.len() as f64
 }
 
-fn genetic_optimize(approxes: &Vec<TaylorApprox>, gens: u32, remaining_num: usize, temp: f64, decreasing_temp: bool) -> Vec<TaylorApprox> {
+fn genetic_optimize(approxes: &Vec<TaylorApprox>, gens: u32, max_num: usize, min_num: usize, temp: f64, decreasing_temp: bool) -> Vec<TaylorApprox> {
 
     let mut v = approxes.clone();
-    let initial_len = approxes.len();
     for i in 0..gens {
-        println!("Gen {i}/{gens} | Average Loss: {}", avg_loss(&v));
 
-        let t = if decreasing_temp {temp / (i + 10) as f64} else {temp};
+        let t = if decreasing_temp {temp / (1. + 0.05 * i as f64).sqrt()} else {temp};
 
-        while v.len() < initial_len {
+        println!("Gen {i}/{gens} | Average Loss: {:.8}", avg_loss(&v));
+
+        while v.len() < max_num {
             let extras: Vec<TaylorApprox> = v.iter().map(|ta| ta.mutate(t)).collect();
             v.extend(extras);
         }
 
         sort_approx(&mut v);
 
-        v = v[..remaining_num].to_vec();
+        v = v[..min_num].to_vec();
     }
     
     v
@@ -123,17 +123,25 @@ fn genetic_optimize(approxes: &Vec<TaylorApprox>, gens: u32, remaining_num: usiz
 
 fn main() {
 
-    let inp: Vec<TaylorApprox> = random_approximations(256, (-1., 1.), 8);
+    let inp: Vec<TaylorApprox> = random_approximations(256, (-10., 10.), 8);
 
 
-    let mut out: Vec<TaylorApprox> = genetic_optimize(&inp, 500, 128, 10., true);
+    let mut out: Vec<TaylorApprox> = genetic_optimize(&inp, 500, 256, 128, 10., true);
 
-    out = genetic_optimize(&out, 100, 64, 1., true);
-    out = elongate(out, 12);
-    out = genetic_optimize(&out, 500, 32, 10., true);
+    out = elongate(out, 8);
+    out = genetic_optimize(&out, 500, 64, 16, 10., true);
+    out = elongate(out, 16);
+    out = genetic_optimize(&out, 100, 64, 16, 1., true);
+    out = genetic_optimize(&out, 1_000, 32, 8, 10., true);
     out = elongate(out, 32);
-    out = genetic_optimize(&out, 1_000, 16, 10., true);
-    out = genetic_optimize(&out, 5_000, 8, 1., true);
+    out = genetic_optimize(&out, 100, 64, 16, 1., true);
+    out = genetic_optimize(&out, 1_000, 32, 8, 10., true);
+    out = elongate(out, 64);
+    out = genetic_optimize(&out, 100, 64, 16, 1., true);
+    out = genetic_optimize(&out, 1_000, 32, 8, 10., true);
+    out = elongate(out, 128);
+    out = genetic_optimize(&out, 100, 64, 16, 1., true);
+    out = genetic_optimize(&out, 5_000, 32, 8, 1., true);
 
 
     sort_approx(&mut out);

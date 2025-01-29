@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[   1466633,      27163]
-NotebookOptionsPosition[   1442946,      26793]
-NotebookOutlinePosition[   1443392,      26811]
-CellTagsIndexPosition[   1443349,      26808]
+NotebookDataLength[   1468701,      27187]
+NotebookOptionsPosition[   1444817,      26815]
+NotebookOutlinePosition[   1445263,      26833]
+CellTagsIndexPosition[   1445220,      26830]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24005,14 +24005,13 @@ Cell["\<\
 For an example of the output of this code, here is one output for a fourier \
 approximation of the square root of sin:\
 \>", "Text",
- CellChangeTimes->{{3.9470793702052727`*^9, 
-  3.9470794160566874`*^9}},ExpressionUUID->"38a6113e-b1dc-4d16-afed-\
+ CellChangeTimes->{{3.9470793702052727`*^9, 3.9470794160566874`*^9}, {
+  3.947093657256456*^9, 
+  3.947093690726087*^9}},ExpressionUUID->"38a6113e-b1dc-4d16-afed-\
 75c6b27be5de"],
 
-Cell["\<\
-Gen 500/500 | temp: 0.000000 | Min Loss 0.0000 | Average Loss: 0.0000Best \
-Coefficients: 
-Best Coefficients: 
+Cell[TextData[StyleBox["Gen 500/500 | temp: 0.000000 | Min Loss 0.0000 | \
+Average Loss: 0.0000Best Coefficients:\nBest Coefficients: \n\
 {-0.4355634416351921, 1.0938254670565426, -0.0000000133469323, \
 -0.0388344510077913, 0.0000000393953703, 0.0058651141176749, \
 -0.0000000269169628, -0.0012461132108824, 0.0000000219403715, \
@@ -24023,27 +24022,21 @@ Best Coefficients:
 0.0000004331971328, -0.0000000333064342, -0.0000002876967330, \
 -0.0000001048171149, 0.0000000093873694, 0.0000001751447335, \
 0.0000001820077363, -0.0000000747473689, -0.0000001556648514, \
--0.0000001029609156, 0.0000001026457206}
-- Root Approximation - - -
-1.3680\:253c           __                       __                       
-      \[VerticalLine]         \:2571\:203e  \:2572                    \:2571\
-\:203e  \:2572                    \:2571 
-      \[VerticalLine]        \:2571     \:2572_                 \:2571     \
-\:2572_                 \:2571  
-0.4560\:253c       \:2571        \:2572               \:2571        \:2572    \
-           \:2571   
-      \[VerticalLine]     \:2571\:203e          \:2572            \
-\:2571\:203e          \:2572             \:2571    
-      \[VerticalLine]    \:2571             \:2572          \:2571            \
- \:2572          \:2571\:203e     
--0.456\:253c   \:2571               \:2572        \:2571               \:2572 \
-       \:2571       
-      \[VerticalLine]  \:2571                 \:2572_     \:2571              \
-   \:2572_     \:2571        
-      \[VerticalLine]_\:2015                    \:2572  _\:2015               \
-     \:2572  _\:2015         
--1.368\:253c                       \:203e\:203e                       \:203e\
-\:203e           
+-0.0000001029609156, 0.0000001026457206}\n- Root Approximation - - -\n1.3680\
+\:253c           __                       __                       \n      \
+\[VerticalLine]         \:2571\:203e  \:2572                    \:2571\:203e  \
+\:2572                    \:2571 \n      \[VerticalLine]        \:2571     \
+\:2572_                 \:2571     \:2572_                 \:2571  \n0.4560\
+\:253c       \:2571        \:2572               \:2571        \:2572          \
+     \:2571   \n      \[VerticalLine]     \:2571\:203e          \:2572        \
+    \:2571\:203e          \:2572             \:2571    \n      \
+\[VerticalLine]    \:2571             \:2572          \:2571             \
+\:2572          \:2571\:203e     \n-0.456\:253c   \:2571               \:2572 \
+       \:2571               \:2572        \:2571       \n      \
+\[VerticalLine]  \:2571                 \:2572_     \:2571                 \
+\:2572_     \:2571        \n      \[VerticalLine]_\:2015                    \
+\:2572  _\:2015                    \:2572  _\:2015         \n-1.368\:253c     \
+                  \:203e\:203e                       \:203e\:203e           \n\
       \:2514\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
 \[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\
 \[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
@@ -24056,46 +24049,42 @@ Best Coefficients:
 \[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
 \[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\
 \[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine] 
-       -7.54  -5.75  -3.96  -2.17  -0.38  1.406  3.195  4.984  6.773
-- Nested Root Approximation - - -
-1.1998\:253c           __                       __                       
-      \[VerticalLine]         \:2571\:203e  \:203e_                   \:2571\
-\:203e  \:203e_                   \:2571 
-      \[VerticalLine]       \:2571\:203e      \:2572                \:2571\
-\:203e      \:2572                \:2571\:203e  
-0.3999\:253c      \:2571         \:2572              \:2571         \:2572    \
-          \:2571    
-      \[VerticalLine]     \:2571           \:2572            \:2571           \
-\:2572                  
-      \[VerticalLine]                  \:2572                        \:2572   \
-        \:2571     
--0.400\:253c    \:2571              \:2572         \:2571              \:2572 \
-        \:2571      
-      \[VerticalLine]  \:2571\:203e                \:2572      \:2571\:203e   \
-             \:2572      \:2571\:203e       
-      \[VerticalLine]_\:2015                   \:2572_  _\:2015               \
-    \:2572_  _\:2015         
--1.200\:253c                       \:203e\:203e                       \:203e\
-\:203e           
-      \:2514\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\
+\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine] \n \
+      -7.54  -5.75  -3.96  -2.17  -0.38  1.406  3.195  4.984  6.773\n- Nested \
+Root Approximation - - -\n1.1998\:253c           __                       __  \
+                     \n      \[VerticalLine]         \:2571\:203e  \:203e_    \
+               \:2571\:203e  \:203e_                   \:2571 \n      \
+\[VerticalLine]       \:2571\:203e      \:2572                \:2571\:203e    \
+  \:2572                \:2571\:203e  \n0.3999\:253c      \:2571         \
+\:2572              \:2571         \:2572              \:2571    \n      \
+\[VerticalLine]     \:2571           \:2572            \:2571           \
+\:2572                  \n      \[VerticalLine]                  \:2572       \
+                 \:2572           \:2571     \n-0.400\:253c    \:2571         \
+     \:2572         \:2571              \:2572         \:2571      \n      \
+\[VerticalLine]  \:2571\:203e                \:2572      \:2571\:203e         \
+       \:2572      \:2571\:203e       \n      \[VerticalLine]_\:2015          \
+         \:2572_  _\:2015                   \:2572_  _\:2015         \n-1.200\
+\:253c                       \:203e\:203e                       \:203e\:203e  \
+         \n      \:2514\:253c\[HorizontalLine]\[HorizontalLine]\
+\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\
 \[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\
+\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\
+\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\
 \[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\
+\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\
+\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\
 \[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\
+\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\
+\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\:253c\
 \[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\[HorizontalLine]\
-\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\[HorizontalLine] 
-       -7.54  -5.75  -3.96  -2.17  -0.38  1.406  3.195  4.984  6.773\
-\>", "ExternalLanguage",
+\[HorizontalLine]\[HorizontalLine]\:253c\[HorizontalLine]\[HorizontalLine]\
+\[HorizontalLine] \n       -7.54  -5.75  -3.96  -2.17  -0.38  1.406  3.195  \
+4.984  6.773",
+ FontFamily->"Monospace"]], "ExternalLanguage",
  CellEvaluationLanguage->"Shell",
- CellChangeTimes->{{3.9470794210935183`*^9, 
-  3.9470794232783937`*^9}},ExpressionUUID->"e3041d1c-c0bc-4111-8cf1-\
+ CellChangeTimes->{{3.9470794210935183`*^9, 3.9470794232783937`*^9}, {
+  3.947093514948145*^9, 3.947093528611117*^9}, {3.947093591982813*^9, 
+  3.947093648022784*^9}},ExpressionUUID->"e3041d1c-c0bc-4111-8cf1-\
 c7be0a99cc81"],
 
 Cell["\<\
@@ -24190,7 +24179,7 @@ Cell[BoxData[
      RowBox[{"FourierApprox", "[", "coefs", "]"}]}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.947079522726585*^9, 3.947079563312172*^9}, {
   3.947088857547265*^9, 3.947088858590206*^9}},
- CellLabel->"In[27]:=",ExpressionUUID->"4b7d0705-69a2-41aa-9317-dd2bbcdb5f3f"],
+ CellLabel->"In[1]:=",ExpressionUUID->"4b7d0705-69a2-41aa-9317-dd2bbcdb5f3f"],
 
 Cell["\<\
 This approximation achieves an incredibly small loss, the best of any method \
@@ -26763,10 +26752,17 @@ Cell["Results", "Section",
   3.946980754157263*^9}},ExpressionUUID->"e0d95145-b815-4be2-a168-\
 3d776fff9e65"],
 
-Cell["", "Text",
- CellChangeTimes->{{3.946980772950054*^9, 
-  3.946980779138467*^9}},ExpressionUUID->"927f1e61-e4ac-43da-aa22-\
-f34cd2b9a6f8"]
+Cell["\<\
+Throughout this paper, we discussed a formal definition for non-integer \
+functional iteration, and presented both formulaic solutions for specific \
+functions as well as numerical techniques for finding fairly accurate \
+approximations of functional roots. Most of our formulas were able to be \
+generalized to complex iteration of complex functions.\
+\>", "Text",
+ CellChangeTimes->{{3.9470940090939493`*^9, 3.947094114714601*^9}, {
+  3.947150121427446*^9, 3.94715015054215*^9}, {3.947150606188755*^9, 
+  3.9471506478503838`*^9}},ExpressionUUID->"3b913296-95f0-44bc-ae6b-\
+63829217934a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -26775,6 +26771,32 @@ Cell["Future Work", "Section",
  CellChangeTimes->{{3.946980758780599*^9, 
   3.946980759915985*^9}},ExpressionUUID->"47511d3f-80c7-46dd-a19f-\
 b54b38782746"],
+
+Cell["\<\
+For formulaic solutions, we mostly used solutions in terms of arithmetic \
+operations. However, using infinite sums or integrals may allow one to apply \
+our techniques for solving functional iteration to a wider variety of \
+function types. In particular, solving for a half iterate by means of a \
+fourier series may be possible for many more functions, especially periodic \
+functions.\
+\>", "Text",
+ CellChangeTimes->{{3.947093828585738*^9, 3.9470938395416803`*^9}, {
+  3.947150153845223*^9, 
+  3.947150336838567*^9}},ExpressionUUID->"c6771402-ef01-445d-9cbf-\
+700aa9e35ae0"],
+
+Cell["\<\
+As for numerical approximations, although we found a variety of methods, the \
+ones which yielded the best results relied heavily on random search and \
+generalized function approximation (instead of iterate-specific \
+improvements). This implies that more efficient algorithms such as gradient \
+descent, simulated annealing, etc. may converge much more quickly on \
+solutions.\
+\>", "Text",
+ CellChangeTimes->{{3.947150338196763*^9, 3.9471504917317543`*^9}, {
+  3.947150553969475*^9, 
+  3.947150565615642*^9}},ExpressionUUID->"4122f4dd-78d3-4185-9da6-\
+5da17b0d2012"],
 
 Cell["", "Text",ExpressionUUID->"a18cc0a6-fd88-4a77-82ee-a81597b98968"]
 }, Open  ]],
@@ -27119,49 +27141,51 @@ Cell[1289074, 23979, 350, 14, 143, "ExternalLanguage",ExpressionUUID->"00d67fa5-
 }, Closed]],
 Cell[CellGroupData[{
 Cell[1289461, 23998, 157, 3, 29, "Subsubsection",ExpressionUUID->"4c79a149-501e-4bb0-9f2b-b13a4c524f55"],
-Cell[1289621, 24003, 272, 6, 27, "Text",ExpressionUUID->"38a6113e-b1dc-4d16-afed-75c6b27be5de"],
-Cell[1289896, 24011, 5218, 87, 484, "ExternalLanguage",ExpressionUUID->"e3041d1c-c0bc-4111-8cf1-c7be0a99cc81"],
-Cell[1295117, 24100, 228, 5, 27, "Text",ExpressionUUID->"d486dad2-3e6e-40da-90ac-185c9a4a3046"],
-Cell[1295348, 24107, 3391, 85, 163, "Input",ExpressionUUID->"4b7d0705-69a2-41aa-9317-dd2bbcdb5f3f"],
-Cell[1298742, 24194, 242, 6, 27, "Text",ExpressionUUID->"b742974c-7837-4da2-95ed-3a5f2f0d7f82"],
+Cell[1289621, 24003, 321, 7, 27, "Text",ExpressionUUID->"38a6113e-b1dc-4d16-afed-75c6b27be5de"],
+Cell[1289945, 24012, 5410, 75, 442, "ExternalLanguage",ExpressionUUID->"e3041d1c-c0bc-4111-8cf1-c7be0a99cc81"],
+Cell[1295358, 24089, 228, 5, 27, "Text",ExpressionUUID->"d486dad2-3e6e-40da-90ac-185c9a4a3046"],
+Cell[1295589, 24096, 3390, 85, 163, "Input",ExpressionUUID->"4b7d0705-69a2-41aa-9317-dd2bbcdb5f3f"],
+Cell[1298982, 24183, 242, 6, 27, "Text",ExpressionUUID->"b742974c-7837-4da2-95ed-3a5f2f0d7f82"],
 Cell[CellGroupData[{
-Cell[1299009, 24204, 217, 3, 23, "Input",ExpressionUUID->"1f13f747-b2d3-4ded-9d1a-ce97a96119d1"],
-Cell[1299229, 24209, 218, 3, 26, "Output",ExpressionUUID->"0fefbedd-f4a9-4794-92b2-e84792cf4f6c"]
+Cell[1299249, 24193, 217, 3, 23, "Input",ExpressionUUID->"1f13f747-b2d3-4ded-9d1a-ce97a96119d1"],
+Cell[1299469, 24198, 218, 3, 26, "Output",ExpressionUUID->"0fefbedd-f4a9-4794-92b2-e84792cf4f6c"]
 }, Open  ]],
-Cell[1299462, 24215, 190, 3, 27, "Text",ExpressionUUID->"406a582b-bae2-439e-8866-d97e877eabfe"],
+Cell[1299702, 24204, 190, 3, 27, "Text",ExpressionUUID->"406a582b-bae2-439e-8866-d97e877eabfe"],
 Cell[CellGroupData[{
-Cell[1299677, 24222, 524, 14, 25, "Input",ExpressionUUID->"597d038f-b1e7-4a86-8f25-51668144a444"],
-Cell[1300204, 24238, 95168, 1621, 192, "Output",ExpressionUUID->"7b490eae-38e5-42c4-8c8e-86160e05a4bd"]
+Cell[1299917, 24211, 524, 14, 25, "Input",ExpressionUUID->"597d038f-b1e7-4a86-8f25-51668144a444"],
+Cell[1300444, 24227, 95168, 1621, 192, "Output",ExpressionUUID->"7b490eae-38e5-42c4-8c8e-86160e05a4bd"]
 }, Open  ]],
-Cell[1395387, 25862, 625, 16, 44, "Text",ExpressionUUID->"e7e2dc71-8798-406d-8ab7-2834442d88de"],
-Cell[1396015, 25880, 3238, 82, 163, "Input",ExpressionUUID->"8ebf85aa-5186-4507-b4b7-6976ee0b167f"],
-Cell[1399256, 25964, 344, 7, 44, "Text",ExpressionUUID->"906a9b17-2a95-4f14-9704-64f9943aefe8"],
+Cell[1395627, 25851, 625, 16, 44, "Text",ExpressionUUID->"e7e2dc71-8798-406d-8ab7-2834442d88de"],
+Cell[1396255, 25869, 3238, 82, 163, "Input",ExpressionUUID->"8ebf85aa-5186-4507-b4b7-6976ee0b167f"],
+Cell[1399496, 25953, 344, 7, 44, "Text",ExpressionUUID->"906a9b17-2a95-4f14-9704-64f9943aefe8"],
 Cell[CellGroupData[{
-Cell[1399625, 25975, 217, 3, 23, "Input",ExpressionUUID->"e8621a3b-b112-494f-982f-5d75cf1b43d2"],
-Cell[1399845, 25980, 291, 4, 26, "Output",ExpressionUUID->"e67b5e5b-23a1-49f6-86a6-9bc7d05abaac"]
+Cell[1399865, 25964, 217, 3, 23, "Input",ExpressionUUID->"e8621a3b-b112-494f-982f-5d75cf1b43d2"],
+Cell[1400085, 25969, 291, 4, 26, "Output",ExpressionUUID->"e67b5e5b-23a1-49f6-86a6-9bc7d05abaac"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1400173, 25989, 599, 15, 25, "Input",ExpressionUUID->"3194bb7a-1e9b-4c0e-b320-e42724b26e03"],
-Cell[1400775, 26006, 40877, 733, 192, "Output",ExpressionUUID->"9c7fde85-f1d1-4ed3-89de-18d72f232943"]
+Cell[1400413, 25978, 599, 15, 25, "Input",ExpressionUUID->"3194bb7a-1e9b-4c0e-b320-e42724b26e03"],
+Cell[1401015, 25995, 40877, 733, 192, "Output",ExpressionUUID->"9c7fde85-f1d1-4ed3-89de-18d72f232943"]
 }, Open  ]],
-Cell[1441667, 26742, 154, 3, 23, "Input",ExpressionUUID->"41e8092f-eaa7-4356-b1b8-aff14d8341b1"]
+Cell[1441907, 26731, 154, 3, 23, "Input",ExpressionUUID->"41e8092f-eaa7-4356-b1b8-aff14d8341b1"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1441894, 26753, 155, 3, 53, "Chapter",ExpressionUUID->"40d3b9c5-7d2d-4c39-9215-28ffaba27bfe"],
+Cell[1442134, 26742, 155, 3, 53, "Chapter",ExpressionUUID->"40d3b9c5-7d2d-4c39-9215-28ffaba27bfe"],
 Cell[CellGroupData[{
-Cell[1442074, 26760, 152, 3, 53, "Section",ExpressionUUID->"e0d95145-b815-4be2-a168-3d776fff9e65"],
-Cell[1442229, 26765, 142, 3, 27, "Text",ExpressionUUID->"927f1e61-e4ac-43da-aa22-f34cd2b9a6f8"]
+Cell[1442314, 26749, 152, 3, 53, "Section",ExpressionUUID->"e0d95145-b815-4be2-a168-3d776fff9e65"],
+Cell[1442469, 26754, 599, 10, 62, "Text",ExpressionUUID->"3b913296-95f0-44bc-ae6b-63829217934a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1442408, 26773, 156, 3, 53, "Section",ExpressionUUID->"47511d3f-80c7-46dd-a19f-b54b38782746"],
-Cell[1442567, 26778, 71, 0, 27, "Text",ExpressionUUID->"a18cc0a6-fd88-4a77-82ee-a81597b98968"]
+Cell[1443105, 26769, 156, 3, 53, "Section",ExpressionUUID->"47511d3f-80c7-46dd-a19f-b54b38782746"],
+Cell[1443264, 26774, 589, 11, 62, "Text",ExpressionUUID->"c6771402-ef01-445d-9cbf-700aa9e35ae0"],
+Cell[1443856, 26787, 579, 11, 62, "Text",ExpressionUUID->"4122f4dd-78d3-4185-9da6-5da17b0d2012"],
+Cell[1444438, 26800, 71, 0, 27, "Text",ExpressionUUID->"a18cc0a6-fd88-4a77-82ee-a81597b98968"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1442675, 26783, 157, 3, 53, "Section",ExpressionUUID->"7cc7fa81-a16e-430d-a4b9-6835f9bcd481"],
-Cell[1442835, 26788, 71, 0, 27, "Text",ExpressionUUID->"0102329b-3bff-477c-9106-e7aa51607ffe"]
+Cell[1444546, 26805, 157, 3, 53, "Section",ExpressionUUID->"7cc7fa81-a16e-430d-a4b9-6835f9bcd481"],
+Cell[1444706, 26810, 71, 0, 27, "Text",ExpressionUUID->"0102329b-3bff-477c-9106-e7aa51607ffe"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]

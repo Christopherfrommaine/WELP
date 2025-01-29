@@ -1,3 +1,4 @@
+use core::f64;
 use std::fmt;
 use cgrustplot::plots::func_plot::function_plot;  // A custom plotting library, for plotting the output
 use rand::distributions::{Uniform, Distribution};  // For random mutations
@@ -14,12 +15,18 @@ fn factorial(num: usize) -> usize {
 }
 
 fn rand_vec(len: usize, range: (f64, f64)) -> Vec<f64> {
-    let mut rng = rand::thread_rng();
-    let dist = Uniform::new(range.0, range.1);
+    if range.0 >= range.1 {
+        (0..len).map(|_| range.0).collect()
+    }
+    else {
 
-    (0..len)
-        .map(|_| dist.sample(&mut rng))
-        .collect()
+        let mut rng = rand::thread_rng();
+        let dist = Uniform::new(range.0, range.1);
+
+        (0..len)
+            .map(|_| dist.sample(&mut rng))
+            .collect()
+    }
 }
 
 // Generate a function from a fourier series
@@ -218,12 +225,12 @@ where
     // Zero mutation, for faster convergence of taylor series
     v.push(Approx::new(v[0].coefs.iter().map(|_| 0.).collect::<Vec<f64>>(), v[0].typ));
 
-    let mut prev_loss: f64;
+    let mut prev_loss = f64::INFINITY;
     let mut min_loss = f64::INFINITY;
     let mut t = 1.;
 
     for i in 0..gens {
-        let debug_string = format!("\rGen {:03}/{gens} | temp: {t:.6} | Min Loss {min_loss:.4} | Average Loss: {:.4}    ", i + 1, avg_loss(&v));
+        let debug_string = format!("\rGen {:03}/{gens} | temp: {t:.6} | Min Loss {min_loss:.4} | Improvement: {}    ", i + 1, prev_loss + min_loss);
         let debug_string2 = &debug_string[..(if debug_string.len() > 80 {80} else {debug_string.len()})];
         print!("{debug_string2}");
         
@@ -329,8 +336,32 @@ where
     best
 }
 
-fn main() {
+fn main1() {
     let f = |x: f64| x.sin();
 
     fourier_example(&Box::new(f));
+}
+
+fn main() {
+    let f = &Box::new(|x: f64| x.sin());
+
+    let approx_type = 'f';
+
+    // Original random input
+    let mut out: Vec<Approx> = random_approximations(2048, (-10., 10.), 16, approx_type);
+    
+    // Optimize with different numbers of surviving approximations
+    out = genetic_optimize(f, out, 2_00, 2048, 256);
+    out = elongate(out, 16, approx_type);
+    out = genetic_optimize(f, out, 5_00, 256, 64);
+    out = elongate(out, 32, approx_type);
+    out = genetic_optimize(f, out, 10_00, 256, 32);
+    out = elongate(out, 64, approx_type);
+    out = genetic_optimize(f, out, 1_00, 256, 16);
+    
+    // Find best approximation, output it
+    sort_approx(&mut out, f);
+    let best = (&out[0]).clone();
+    println!("Best Coefficients: {best}");
+    best.plot();
 }

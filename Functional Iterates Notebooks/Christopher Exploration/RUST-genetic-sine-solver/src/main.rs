@@ -5,8 +5,9 @@ use rand::distributions::{Uniform, Distribution};  // For random mutations
 use rayon::prelude::*;  // For parallelization
 
 // // Mathematical Helpers
+#[allow(dead_code)]
 const PI: f64 = std::f64::consts::PI;
-const RANGE: (f64, f64) = (-2. * PI, 2. * PI); // Range over which to evaluate the function
+const RANGE: (f64, f64) = (-1., 1.); // Range over which to evaluate the function
 
 fn factorial(num: usize) -> usize {
     let mut o = 1;
@@ -29,8 +30,24 @@ fn rand_vec(len: usize, range: (f64, f64)) -> Vec<f64> {
     }
 }
 
-// Generate a function from a fourier series
+// Generate a function from a full fourier series
 fn fourier(coefs: &Vec<f64>) -> impl Fn(f64) -> f64 {
+    let c = coefs.clone();
+    
+    move |x: f64| c
+        .iter()
+        .enumerate()
+        .map(|(i, c)|
+            if i % 2 == 0 {
+                c * (i as f64 * x).sin()
+            } else {
+                c * (i as f64 * x).cos()
+            }
+        ).sum::<f64>()
+}
+
+// Generate a function from a fourier series of only sin terms
+fn sine_fourier(coefs: &Vec<f64>) -> impl Fn(f64) -> f64 {
     let c = coefs.clone();
     
     move |x: f64| c
@@ -41,7 +58,7 @@ fn fourier(coefs: &Vec<f64>) -> impl Fn(f64) -> f64 {
         ).sum::<f64>()
 }
 
-// Generate a function from a fourier series
+// Generate a function from a fourier series of only cos terms
 fn cosine_fourier(coefs: &Vec<f64>) -> impl Fn(f64) -> f64 {
     let c = coefs.clone();
     
@@ -133,6 +150,7 @@ impl Approx {
     fn as_func(&self) -> Box<dyn Fn(f64) -> f64> {
         match self.typ {
             'f' => Box::new(fourier(&self.coefs)),
+            's' => Box::new(sine_fourier(&self.coefs)),
             't' => Box::new(taylor(&self.coefs)),
             'l' => Box::new(linear(&self.coefs)),
             'c' => Box::new(cosine_fourier(&self.coefs)),
@@ -211,6 +229,7 @@ fn elongate(v: Vec<Approx>, n: usize, typ: char) -> Vec<Approx> {
     }).collect()
 }
 
+#[allow(dead_code)]
 fn avg_loss(v: &Vec<Approx>) -> f64 {
     v.iter().map(|ta| ta.loss.unwrap_or(0.)).sum::<f64>() / v.len() as f64
 }
@@ -336,32 +355,46 @@ where
     best
 }
 
-fn main1() {
-    let f = |x: f64| x.sin();
+fn approximator<F>(order: Vec<(usize, usize, i32)>, typ: char, f:&Box<F>) -> Approx 
+where 
+    F: Fn(f64) -> f64 + Sized + Clone + std::marker::Sync
+{
+    let (max, _min, gens) = order[0];
+    let mut out = random_approximations(gens.abs() as usize, (-1., 1.), max, typ);
+    
+    for i in 0..(order.len()) {
+        let (max, min, gens) = order[i];
 
-    fourier_example(&Box::new(f));
+        if gens <= 0 || max == 0 || min == 0 {
+            out = elongate(out, gens.abs() as usize, typ);
+        }
+        else {
+            out = genetic_optimize(f, out, gens as u32, max, min);
+        }
+    }
+
+    sort_approx(&mut out, f);
+    out[0].clone()
+}
+
+fn auto_approx<F>(f: F, typ: char)
+where 
+    F: Fn(f64) -> f64 + Sized + Clone + std::marker::Sync
+{
+    let best = approximator(vec![(0, 0, -8), (1024, 64, 300), (256, 32, 2000), (0, 0, -8), (256, 64, 1000), (64, 8, 4000)], typ, &Box::new(f));
+    // best.plot();
+    println!("Loss: {}", best.loss.unwrap_or(0.));
+    println!("Best Coefficients: {best}");
 }
 
 fn main() {
-    let f = &Box::new(|x: f64| x.sin());
-
-    let approx_type = 'f';
-
-    // Original random input
-    let mut out: Vec<Approx> = random_approximations(2048, (-10., 10.), 16, approx_type);
+    let typ = std::env::args().nth(1).unwrap_or("t".into()).chars().next().unwrap();
     
-    // Optimize with different numbers of surviving approximations
-    out = genetic_optimize(f, out, 2_00, 2048, 256);
-    out = elongate(out, 16, approx_type);
-    out = genetic_optimize(f, out, 5_00, 256, 64);
-    out = elongate(out, 32, approx_type);
-    out = genetic_optimize(f, out, 10_00, 256, 32);
-    out = elongate(out, 64, approx_type);
-    out = genetic_optimize(f, out, 1_00, 256, 16);
-    
-    // Find best approximation, output it
-    sort_approx(&mut out, f);
-    let best = (&out[0]).clone();
-    println!("Best Coefficients: {best}");
-    best.plot();
+    println!("Type: {typ}");
+    auto_approx(|x| x * x + 1., typ);
+    auto_approx(|x| 2. * x + 3., typ);
+    auto_approx(|x| x.cos(), typ);
+    auto_approx(|x| x.exp(), typ);
+    auto_approx(|x| (x + 2.).ln(), typ);
+    auto_approx(|x| if x < 0. {x + 1.} else {x * x}, typ);
 }

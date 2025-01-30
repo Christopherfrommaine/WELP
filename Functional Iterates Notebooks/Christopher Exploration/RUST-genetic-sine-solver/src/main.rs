@@ -7,7 +7,7 @@ use rayon::prelude::*;  // For parallelization
 // // Mathematical Helpers
 #[allow(dead_code)]
 const PI: f64 = std::f64::consts::PI;
-const RANGE: (f64, f64) = (-1., 1.); // Range over which to evaluate the function
+const RANGE: (f64, f64) = (-2. * PI, 2. * PI); // Range over which to evaluate the function
 
 fn factorial(num: usize) -> usize {
     let mut o = 1;
@@ -249,7 +249,7 @@ where
     let mut t = 1.;
 
     for i in 0..gens {
-        let debug_string = format!("\rGen {:03}/{gens} | temp: {t:.6} | Min Loss {min_loss:.4} | Improvement: {}    ", i + 1, prev_loss + min_loss);
+        let debug_string = format!("\rGen {:03}/{gens} | temp: {t:.6} | Min Loss {min_loss:.4} | Improvement: {}                                          ", i + 1,  (prev_loss - min_loss));
         let debug_string2 = &debug_string[..(if debug_string.len() > 80 {80} else {debug_string.len()})];
         print!("{debug_string2}");
         
@@ -361,7 +361,7 @@ where
 {
     let (max, _min, gens) = order[0];
     let mut out = random_approximations(gens.abs() as usize, (-1., 1.), max, typ);
-    
+
     for i in 0..(order.len()) {
         let (max, min, gens) = order[i];
 
@@ -387,14 +387,15 @@ where
     println!("Best Coefficients: {best}");
 }
 
+fn sigmoid(x: f64) -> f64 {
+    1.0 / (1.0 + (-x).exp())
+}
+
 fn main() {
+    let f = |x: f64| (x).sin() + sigmoid(x);
+
     let typ = std::env::args().nth(1).unwrap_or("t".into()).chars().next().unwrap();
-    
     println!("Type: {typ}");
-    auto_approx(|x| x * x + 1., typ);
-    auto_approx(|x| 2. * x + 3., typ);
-    auto_approx(|x| x.cos(), typ);
-    auto_approx(|x| x.exp(), typ);
-    auto_approx(|x| (x + 2.).ln(), typ);
-    auto_approx(|x| if x < 0. {x + 1.} else {x * x}, typ);
+
+    auto_approx(f, typ);
 }

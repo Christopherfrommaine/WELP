@@ -183,15 +183,14 @@ impl Approx {
     fn plot(&self) {
         // Use cgrustplot to plot the aprpoximation in the console
         let func = self.as_func();
-        function_plot(func)
-            .set_title(String::from("- Root Approximation - - -"))
+        function_plot(&func)
+            .set_title("- Root Approximation - - -")
             .set_domain(RANGE)
             .print();
 
-        let func = self.as_func();
         let nested_func = move |x| func(func(x));
-        function_plot(nested_func)
-            .set_title(String::from("- Nested Root Approximation - - -"))
+        function_plot(&nested_func)
+            .set_title("- Nested Root Approximation - - -")
             .set_domain(RANGE)
             .print();
     }

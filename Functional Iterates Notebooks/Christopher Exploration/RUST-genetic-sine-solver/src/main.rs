@@ -1,6 +1,6 @@
 use core::f64;
 use std::fmt;
-use cgrustplot::plots::func_plot::function_plot;  // A custom plotting library, for plotting the output
+use cgrustplot::plots::function_plot::function_plot;  // A custom plotting library, for plotting the output
 use rand::distributions::{Uniform, Distribution};  // For random mutations
 use rayon::prelude::*;  // For parallelization
 
@@ -194,6 +194,21 @@ impl Approx {
             .set_domain(RANGE)
             .print();
     }
+
+    fn pyplot(&self) {
+        // Use cgrustplot to plot the aprpoximation in the console
+        let func = self.as_func();
+        function_plot(&func)
+            .set_title("- Root Approximation - - -")
+            .set_domain(RANGE)
+            .pyplot();
+
+        let nested_func = move |x| func(func(x));
+        function_plot(&nested_func)
+            .set_title("- Nested Root Approximation - - -")
+            .set_domain(RANGE)
+            .pyplot();
+    }
 }
 
 fn eval_all<F: Fn(f64) -> f64 + Sized + Clone + std::marker::Sync>(v: &mut Vec<Approx>, f: &Box<F>) {
@@ -381,7 +396,9 @@ where
     F: Fn(f64) -> f64 + Sized + Clone + std::marker::Sync
 {
     let best = approximator(vec![(0, 0, -8), (1024, 64, 300), (256, 32, 2000), (0, 0, -8), (256, 64, 1000), (64, 8, 4000)], typ, &Box::new(f));
-    // best.plot();
+    
+    best.plot();
+    best.pyplot();
     println!("Loss: {}", best.loss.unwrap_or(0.));
     println!("Best Coefficients: {best}");
 }
@@ -391,9 +408,9 @@ fn sigmoid(x: f64) -> f64 {
 }
 
 fn main() {
-    let f = |x: f64| (x).sin() + sigmoid(x);
+    let f = |x: f64| x.sin();
 
-    let typ = std::env::args().nth(1).unwrap_or("t".into()).chars().next().unwrap();
+    let typ = std::env::args().nth(1).unwrap_or("s".into()).chars().next().unwrap();
     println!("Type: {typ}");
 
     auto_approx(f, typ);
